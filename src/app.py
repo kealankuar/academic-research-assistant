@@ -1,82 +1,90 @@
 # src/app.py
-import os
+
 import streamlit as st
+import os
+from data_acquisition import download_and_save_topic
 from retrieval import load_documents, create_embeddings, build_faiss_index, retrieve_documents
 from generation import load_generator, generate_response
-import re
 
-def capitalize_sentences(text):
-    sentences = re.split(r'([.!?]\s+)', text)
-    capitalized = []
-    for i in range(0, len(sentences), 2):
-        sentence = sentences[i].strip().capitalize()
-        separator = sentences[i+1] if i+1 < len(sentences) else ""
-        capitalized.append(sentence + separator)
-    return "".join(capitalized)
+def acquisition_tab():
+    st.header("Data Acquisition")
+    st.write("Fetch research papers from arXiv for one or more topics. Enter the topics separated by commas (e.g., deep learning, machine learning, neural networks).")
+    
+    # Input: Allow multiple topics as a comma-separated string
+    topic_input = st.text_input("Enter the research topics:")
+    num_docs = st.number_input("Number of documents to fetch per topic:", min_value=5, max_value=200, value=50, step=5)
+    
+    if st.button("Fetch Documents"):
+        if topic_input.strip() == "":
+            st.error("Please enter at least one topic.")
+        else:
+            topics = [t.strip() for t in topic_input.split(",") if t.strip()]
+            if not topics:
+                st.error("Please enter valid topics separated by commas.")
+            else:
+                all_docs = []
+                for topic in topics:
+                    with st.spinner(f"Fetching documents for topic: {topic}..."):
+                        docs = download_and_save_topic(topic, total_results=int(num_docs), batch_size=5)
+                        all_docs.extend(docs)
+                st.success(f"Fetched a total of {len(all_docs)} documents across {len(topics)} topics.")
+                # Optionally, display a preview of the first document from the first topic:
+                if all_docs:
+                    st.write("Example Document:", all_docs[0])
+                    
+                # Optionally, save combined topics into one file (if required)
+                combined_filename = os.path.join("data", "raw", "arxiv_combined_documents.json")
+                with open(combined_filename, 'w', encoding='utf-8') as f:
+                    import json
+                    json.dump(all_docs, f, indent=2)
+                st.info(f"Combined dataset saved to {combined_filename}")
 
-def main():
-    st.title("Academic Research Assistant")
+
+
+def main_app_tab():
+    st.header("Main App: Query Research Papers")
     
-    # Inject custom CSS at the start of your app
-    st.markdown(
-        """
-        <style>
-        .generated-answer {
-            font-size: 18px;
-            color: #000000;  /* Change this to a lighter color if your background is dark */
-            line-height: 1.6;
-            background-color: #f9f9f9;  /* Optional: add a background color for better contrast */
-            padding: 10px;
-            border-radius: 5px;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-)
+    # Determine the path to the combined dataset
+    project_root = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
+    data_file = os.path.join(project_root, "data", "raw", "arxiv_combined_documents.json")
     
-    # Construct the path to your dataset from the project root
-    src_dir = os.path.dirname(os.path.abspath(__file__))
-    project_root = os.path.join(src_dir, '..')
-    data_file = os.path.join(project_root, 'data', 'raw', 'arxiv_combined_documents.json')
-    
-    # Load the documents
-    documents = load_documents(data_file)
-    st.write(f"Loaded {len(documents)} documents.")
-    
-    # Generate embeddings and build the FAISS index
-    embeddings, embedder = create_embeddings(documents)
-    index = build_faiss_index(embeddings)
-    
-    # Load the T5 generative model and tokenizer
-    gen_model, tokenizer = load_generator("t5-small")
-    
-    # Accept a user query from the interface
-    query = st.text_input("Enter your research query:")
-    
-    if query:
-        # Retrieve top relevant documents
-        retrieved_docs = retrieve_documents(query, embedder, index, documents, top_k=3)
+    if os.path.exists(data_file):
+        documents = load_documents(data_file)
+        st.write(f"Loaded {len(documents)} documents.")
         
-        # Concatenate abstracts as context for the generative model
-        context = " ".join([doc['text'] for doc in retrieved_docs])
+        # Build the retrieval pipeline
+        with st.spinner("Preparing retrieval index..."):
+            embeddings, embedder = create_embeddings(documents)
+            index = build_faiss_index(embeddings)
         
-        # Generate the answer
-        answer = generate_response(query, context, gen_model, tokenizer)
-        formatted_answer = capitalize_sentences(answer)
+        gen_model, tokenizer = load_generator("t5-small")
         
-        # Use columns to display the generated answer and research papers side-by-side
-        col1, col2 = st.columns(2)
-        
-        with col1:
+        # User query input
+        query = st.text_input("Enter your research query:")
+        if query:
+            with st.spinner("Retrieving and generating response..."):
+                retrieved_docs = retrieve_documents(query, embedder, index, documents, top_k=3)
+                # Combine the retrieved abstracts as context
+                context = " ".join([doc['text'] for doc in retrieved_docs])
+                answer = generate_response(query, context, gen_model, tokenizer)
+            
             st.subheader("Generated Answer")
-            st.markdown(f"<div class='generated-answer'>{formatted_answer}</div>", unsafe_allow_html=True)
-        
-        with col2:
+            st.write(answer)
+            
             st.subheader("Relevant Research Papers")
             for i, doc in enumerate(retrieved_docs):
-                st.markdown(f"**{doc['title']}**")
+                st.write(f"**{doc['title']}**")
                 st.write(doc['text'][:300] + "...")
                 st.markdown(f"[View PDF]({doc['pdf_link']})")
+    else:
+        st.error("No dataset found. Please use the Data Acquisition tab to fetch documents first.")
 
-if __name__ == "__main__":
-    main()
+# Main dashboard title and tabs
+st.title("Academic Research Assistant Dashboard")
+tab1, tab2 = st.tabs(["Data Acquisition", "Main App"])
+
+with tab1:
+    acquisition_tab()
+
+with tab2:
+    main_app_tab()

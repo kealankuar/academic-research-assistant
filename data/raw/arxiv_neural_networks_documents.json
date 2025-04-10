@@ -466,5 +466,108 @@
     "authors": [
       "J. Balakrishnan"
     ]
+  },
+  {
+    "title": "Feedforward Neural Networks for Caching: Enough or Too Much?",
+    "text": "Feedforward Neural Networks for Caching: Enough or Too Much?. We propose a caching policy that uses a feedforward neural network (FNN) to\npredict content popularity. Our scheme outperforms popular eviction policies\nlike LRU or ARC, but also a new policy relying on the more complex recurrent\nneural networks. At the same time, replacing the FNN predictor with a naive\nlinear estimator does not degrade caching performance significantly,\nquestioning then the role of neural networks for these applications.",
+    "pdf_link": "http://arxiv.org/pdf/1810.06930v1.pdf",
+    "authors": [
+      "Vladyslav Fedchenko",
+      "Giovanni Neglia",
+      "Bruno Ribeiro"
+    ]
+  },
+  {
+    "title": "Neural SDE: Stabilizing Neural ODE Networks with Stochastic Noise",
+    "text": "Neural SDE: Stabilizing Neural ODE Networks with Stochastic Noise. Neural Ordinary Differential Equation (Neural ODE) has been proposed as a\ncontinuous approximation to the ResNet architecture. Some commonly used\nregularization mechanisms in discrete neural networks (e.g. dropout, Gaussian\nnoise) are missing in current Neural ODE networks. In this paper, we propose a\nnew continuous neural network framework called Neural Stochastic Differential\nEquation (Neural SDE) network, which naturally incorporates various commonly\nused regularization mechanisms based on random noise injection. Our framework\ncan model various types of noise injection frequently used in discrete networks\nfor regularization purpose, such as dropout and additive/multiplicative noise\nin each block. We provide theoretical analysis explaining the improved\nrobustness of Neural SDE models against input perturbations/adversarial\nattacks. Furthermore, we demonstrate that the Neural SDE network can achieve\nbetter generalization than the Neural ODE and is more resistant to adversarial\nand non-adversarial input perturbations.",
+    "pdf_link": "http://arxiv.org/pdf/1906.02355v1.pdf",
+    "authors": [
+      "Xuanqing Liu",
+      "Tesi Xiao",
+      "Si Si",
+      "Qin Cao",
+      "Sanjiv Kumar",
+      "Cho-Jui Hsieh"
+    ]
+  },
+  {
+    "title": "The Representation Theory of Neural Networks",
+    "text": "The Representation Theory of Neural Networks. In this work, we show that neural networks can be represented via the\nmathematical theory of quiver representations. More specifically, we prove that\na neural network is a quiver representation with activation functions, a\nmathematical object that we represent using a network quiver. Also, we show\nthat network quivers gently adapt to common neural network concepts such as\nfully-connected layers, convolution operations, residual connections, batch\nnormalization, pooling operations and even randomly wired neural networks. We\nshow that this mathematical representation is by no means an approximation of\nwhat neural networks are as it exactly matches reality. This interpretation is\nalgebraic and can be studied with algebraic methods. We also provide a quiver\nrepresentation model to understand how a neural network creates representations\nfrom the data. We show that a neural network saves the data as quiver\nrepresentations, and maps it to a geometrical space called the moduli space,\nwhich is given in terms of the underlying oriented graph of the network, i.e.,\nits quiver. This results as a consequence of our defined objects and of\nunderstanding how the neural network computes a prediction in a combinatorial\nand algebraic way. Overall, representing neural networks through the quiver\nrepresentation theory leads to 9 consequences and 4 inquiries for future\nresearch that we believe are of great interest to better understand what neural\nnetworks are and how they work.",
+    "pdf_link": "http://arxiv.org/pdf/2007.12213v2.pdf",
+    "authors": [
+      "Marco Antonio Armenta",
+      "Pierre-Marc Jodoin"
+    ]
+  },
+  {
+    "title": "Deep Kronecker neural networks: A general framework for neural networks\n  with adaptive activation functions",
+    "text": "Deep Kronecker neural networks: A general framework for neural networks\n  with adaptive activation functions. We propose a new type of neural networks, Kronecker neural networks (KNNs),\nthat form a general framework for neural networks with adaptive activation\nfunctions. KNNs employ the Kronecker product, which provides an efficient way\nof constructing a very wide network while keeping the number of parameters low.\nOur theoretical analysis reveals that under suitable conditions, KNNs induce a\nfaster decay of the loss than that by the feed-forward networks. This is also\nempirically verified through a set of computational examples. Furthermore,\nunder certain technical assumptions, we establish global convergence of\ngradient descent for KNNs. As a specific case, we propose the Rowdy activation\nfunction that is designed to get rid of any saturation region by injecting\nsinusoidal fluctuations, which include trainable parameters. The proposed Rowdy\nactivation function can be employed in any neural network architecture like\nfeed-forward neural networks, Recurrent neural networks, Convolutional neural\nnetworks etc. The effectiveness of KNNs with Rowdy activation is demonstrated\nthrough various computational experiments including function approximation\nusing feed-forward neural networks, solution inference of partial differential\nequations using the physics-informed neural networks, and standard deep\nlearning benchmark problems using convolutional and fully-connected neural\nnetworks.",
+    "pdf_link": "http://arxiv.org/pdf/2105.09513v2.pdf",
+    "authors": [
+      "Ameya D. Jagtap",
+      "Yeonjong Shin",
+      "Kenji Kawaguchi",
+      "George Em Karniadakis"
+    ]
+  },
+  {
+    "title": "Can a powerful neural network be a teacher for a weaker neural network?",
+    "text": "Can a powerful neural network be a teacher for a weaker neural network?. The transfer learning technique is widely used to learning in one context and\napplying it to another, i.e. the capacity to apply acquired knowledge and\nskills to new situations. But is it possible to transfer the learning from a\ndeep neural network to a weaker neural network? Is it possible to improve the\nperformance of a weak neural network using the knowledge acquired by a more\npowerful neural network? In this work, during the training process of a weak\nnetwork, we add a loss function that minimizes the distance between the\nfeatures previously learned from a strong neural network with the features that\nthe weak network must try to learn. To demonstrate the effectiveness and\nrobustness of our approach, we conducted a large number of experiments using\nthree known datasets and demonstrated that a weak neural network can increase\nits performance if its learning process is driven by a more powerful neural\nnetwork.",
+    "pdf_link": "http://arxiv.org/pdf/2005.00393v2.pdf",
+    "authors": [
+      "Nicola Landro",
+      "Ignazio Gallo",
+      "Riccardo La Grassa"
+    ]
+  },
+  {
+    "title": "Message Passing Variational Autoregressive Network for Solving\n  Intractable Ising Models",
+    "text": "Message Passing Variational Autoregressive Network for Solving\n  Intractable Ising Models. Many deep neural networks have been used to solve Ising models, including\nautoregressive neural networks, convolutional neural networks, recurrent neural\nnetworks, and graph neural networks. Learning a probability distribution of\nenergy configuration or finding the ground states of a disordered, fully\nconnected Ising model is essential for statistical mechanics and NP-hard\nproblems. Despite tremendous efforts, a neural network architecture with the\nability to high-accurately solve these fully connected and extremely\nintractable problems on larger systems is still lacking. Here we propose a\nvariational autoregressive architecture with a message passing mechanism, which\ncan effectively utilize the interactions between spin variables. The new\nnetwork trained under an annealing framework outperforms existing methods in\nsolving several prototypical Ising spin Hamiltonians, especially for larger\nspin systems at low temperatures. The advantages also come from the great\nmitigation of mode collapse during the training process of deep neural\nnetworks. Considering these extremely difficult problems to be solved, our\nmethod extends the current computational limits of unsupervised neural networks\nto solve combinatorial optimization problems.",
+    "pdf_link": "http://arxiv.org/pdf/2404.06225v1.pdf",
+    "authors": [
+      "Qunlong Ma",
+      "Zhi Ma",
+      "Jinlong Xu",
+      "Hairui Zhang",
+      "Ming Gao"
+    ]
+  },
+  {
+    "title": "Dynamics of Deep Neural Networks and Neural Tangent Hierarchy",
+    "text": "Dynamics of Deep Neural Networks and Neural Tangent Hierarchy. The evolution of a deep neural network trained by the gradient descent can be\ndescribed by its neural tangent kernel (NTK) as introduced in [20], where it\nwas proven that in the infinite width limit the NTK converges to an explicit\nlimiting kernel and it stays constant during training. The NTK was also\nimplicit in some other recent papers [6,13,14]. In the overparametrization\nregime, a fully-trained deep neural network is indeed equivalent to the kernel\nregression predictor using the limiting NTK. And the gradient descent achieves\nzero training loss for a deep overparameterized neural network. However, it was\nobserved in [5] that there is a performance gap between the kernel regression\nusing the limiting NTK and the deep neural networks. This performance gap is\nlikely to originate from the change of the NTK along training due to the finite\nwidth effect. The change of the NTK along the training is central to describe\nthe generalization features of deep neural networks.\n  In the current paper, we study the dynamic of the NTK for finite width deep\nfully-connected neural networks. We derive an infinite hierarchy of ordinary\ndifferential equations, the neural tangent hierarchy (NTH) which captures the\ngradient descent dynamic of the deep neural network. Moreover, under certain\nconditions on the neural network width and the data set dimension, we prove\nthat the truncated hierarchy of NTH approximates the dynamic of the NTK up to\narbitrary precision. This description makes it possible to directly study the\nchange of the NTK for deep neural networks, and sheds light on the observation\nthat deep neural networks outperform kernel regressions using the corresponding\nlimiting NTK.",
+    "pdf_link": "http://arxiv.org/pdf/1909.08156v1.pdf",
+    "authors": [
+      "Jiaoyang Huang",
+      "Horng-Tzer Yau"
+    ]
+  },
+  {
+    "title": "Novel Kernel Models and Exact Representor Theory for Neural Networks\n  Beyond the Over-Parameterized Regime",
+    "text": "Novel Kernel Models and Exact Representor Theory for Neural Networks\n  Beyond the Over-Parameterized Regime. This paper presents two models of neural-networks and their training\napplicable to neural networks of arbitrary width, depth and topology, assuming\nonly finite-energy neural activations; and a novel representor theory for\nneural networks in terms of a matrix-valued kernel. The first model is exact\n(un-approximated) and global, casting the neural network as an elements in a\nreproducing kernel Banach space (RKBS); we use this model to provide tight\nbounds on Rademacher complexity. The second model is exact and local, casting\nthe change in neural network function resulting from a bounded change in\nweights and biases (ie. a training step) in reproducing kernel Hilbert space\n(RKHS) in terms of a local-intrinsic neural kernel (LiNK). This local model\nprovides insight into model adaptation through tight bounds on Rademacher\ncomplexity of network adaptation. We also prove that the neural tangent kernel\n(NTK) is a first-order approximation of the LiNK kernel. Finally, and noting\nthat the LiNK does not provide a representor theory for technical reasons, we\npresent an exact novel representor theory for layer-wise neural network\ntraining with unregularized gradient descent in terms of a local-extrinsic\nneural kernel (LeNK). This representor theory gives insight into the role of\nhigher-order statistics in neural network training and the effect of kernel\nevolution in neural-network kernel models. Throughout the paper (a) feedforward\nReLU networks and (b) residual networks (ResNet) are used as illustrative\nexamples.",
+    "pdf_link": "http://arxiv.org/pdf/2405.15254v1.pdf",
+    "authors": [
+      "Alistair Shilton",
+      "Sunil Gupta",
+      "Santu Rana",
+      "Svetha Venkatesh"
+    ]
+  },
+  {
+    "title": "Descriptive complexity for neural networks via Boolean networks",
+    "text": "Descriptive complexity for neural networks via Boolean networks. We investigate the descriptive complexity of a class of neural networks with\nunrestricted topologies and piecewise polynomial activation functions. We\nconsider the general scenario where the networks run for an unlimited number of\nrounds and floating-point numbers are used to simulate reals. We characterize\nthese neural networks with a recursive rule-based logic for Boolean networks.\nIn particular, we show that the sizes of the neural networks and the\ncorresponding Boolean rule formulae are polynomially related. In fact, in the\ndirection from Boolean rules to neural networks, the blow-up is only linear.\nOur translations result in a time delay, which is the number of rounds that it\ntakes for an object's translation to simulate a single round of the object. In\nthe translation from neural networks to Boolean rules, the time delay of the\nresulting formula is polylogarithmic in the neural network size. In the\nconverse translation, the time delay of the neural network is linear in the\nformula size. As a corollary, by restricting our logic, we obtain a similar\ncharacterization for classical feedforward neural networks. We also obtain\ntranslations between the rule-based logic for Boolean networks, the\ndiamond-free fragment of modal substitution calculus and a class of recursive\nBoolean circuits where the number of input and output gates match. Ultimately,\nour translations offer a method of translating a given neural network into an\nequivalent neural network with different activation functions, including linear\nactivation functions!",
+    "pdf_link": "http://arxiv.org/pdf/2308.06277v3.pdf",
+    "authors": [
+      "Veeti Ahvonen",
+      "Damian Heiman",
+      "Antti Kuusisto"
+    ]
+  },
+  {
+    "title": "Feature Weight Tuning for Recursive Neural Networks",
+    "text": "Feature Weight Tuning for Recursive Neural Networks. This paper addresses how a recursive neural network model can automatically\nleave out useless information and emphasize important evidence, in other words,\nto perform \"weight tuning\" for higher-level representation acquisition. We\npropose two models, Weighted Neural Network (WNN) and Binary-Expectation Neural\nNetwork (BENN), which automatically control how much one specific unit\ncontributes to the higher-level representation. The proposed model can be\nviewed as incorporating a more powerful compositional function for embedding\nacquisition in recursive neural networks. Experimental results demonstrate the\nsignificant improvement over standard neural models.",
+    "pdf_link": "http://arxiv.org/pdf/1412.3714v2.pdf",
+    "authors": [
+      "Jiwei Li"
+    ]
   }
 ]
