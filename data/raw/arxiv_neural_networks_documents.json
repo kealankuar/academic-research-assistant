@@ -1,0 +1,470 @@
+[
+  {
+    "title": "Lecture Notes: Neural Network Architectures",
+    "text": "Lecture Notes: Neural Network Architectures. These lecture notes provide an overview of Neural Network architectures from\na mathematical point of view. Especially, Machine Learning with Neural Networks\nis seen as an optimization problem. Covered are an introduction to Neural\nNetworks and the following architectures: Feedforward Neural Network,\nConvolutional Neural Network, ResNet, and Recurrent Neural Network.",
+    "pdf_link": "http://arxiv.org/pdf/2304.05133v2.pdf",
+    "authors": [
+      "Evelyn Herberg"
+    ]
+  },
+  {
+    "title": "Self-Organizing Multilayered Neural Networks of Optimal Complexity",
+    "text": "Self-Organizing Multilayered Neural Networks of Optimal Complexity. The principles of self-organizing the neural networks of optimal complexity\nis considered under the unrepresentative learning set. The method of\nself-organizing the multi-layered neural networks is offered and used to train\nthe logical neural networks which were applied to the medical diagnostics.",
+    "pdf_link": "http://arxiv.org/pdf/cs/0504056v1.pdf",
+    "authors": [
+      "V. Schetinin"
+    ]
+  },
+  {
+    "title": "Neural Network Processing Neural Networks: An efficient way to learn\n  higher order functions",
+    "text": "Neural Network Processing Neural Networks: An efficient way to learn\n  higher order functions. Functions are rich in meaning and can be interpreted in a variety of ways.\nNeural networks were proven to be capable of approximating a large class of\nfunctions[1]. In this paper, we propose a new class of neural networks called\n\"Neural Network Processing Neural Networks\" (NNPNNs), which inputs neural\nnetworks and numerical values, instead of just numerical values. Thus enabling\nneural networks to represent and process rich structures.",
+    "pdf_link": "http://arxiv.org/pdf/1911.05640v2.pdf",
+    "authors": [
+      "Firat Tuna"
+    ]
+  },
+  {
+    "title": "Guaranteed Quantization Error Computation for Neural Network Model\n  Compression",
+    "text": "Guaranteed Quantization Error Computation for Neural Network Model\n  Compression. Neural network model compression techniques can address the computation issue\nof deep neural networks on embedded devices in industrial systems. The\nguaranteed output error computation problem for neural network compression with\nquantization is addressed in this paper. A merged neural network is built from\na feedforward neural network and its quantized version to produce the exact\noutput difference between two neural networks. Then, optimization-based methods\nand reachability analysis methods are applied to the merged neural network to\ncompute the guaranteed quantization error. Finally, a numerical example is\nproposed to validate the applicability and effectiveness of the proposed\napproach.",
+    "pdf_link": "http://arxiv.org/pdf/2304.13812v1.pdf",
+    "authors": [
+      "Wesley Cooke",
+      "Zihao Mo",
+      "Weiming Xiang"
+    ]
+  },
+  {
+    "title": "Graph Structure of Neural Networks",
+    "text": "Graph Structure of Neural Networks. Neural networks are often represented as graphs of connections between\nneurons. However, despite their wide use, there is currently little\nunderstanding of the relationship between the graph structure of the neural\nnetwork and its predictive performance. Here we systematically investigate how\ndoes the graph structure of neural networks affect their predictive\nperformance. To this end, we develop a novel graph-based representation of\nneural networks called relational graph, where layers of neural network\ncomputation correspond to rounds of message exchange along the graph structure.\nUsing this representation we show that: (1) a \"sweet spot\" of relational graphs\nleads to neural networks with significantly improved predictive performance;\n(2) neural network's performance is approximately a smooth function of the\nclustering coefficient and average path length of its relational graph; (3) our\nfindings are consistent across many different tasks and datasets; (4) the sweet\nspot can be identified efficiently; (5) top-performing neural networks have\ngraph structure surprisingly similar to those of real biological neural\nnetworks. Our work opens new directions for the design of neural architectures\nand the understanding on neural networks in general.",
+    "pdf_link": "http://arxiv.org/pdf/2007.06559v2.pdf",
+    "authors": [
+      "Jiaxuan You",
+      "Jure Leskovec",
+      "Kaiming He",
+      "Saining Xie"
+    ]
+  },
+  {
+    "title": "Hybrid Quantum-Classical Neural Networks for Downlink Beamforming\n  Optimization",
+    "text": "Hybrid Quantum-Classical Neural Networks for Downlink Beamforming\n  Optimization. This paper investigates quantum machine learning to optimize the beamforming\nin a multiuser multiple-input single-output downlink system. We aim to combine\nthe power of quantum neural networks and the success of classical deep neural\nnetworks to enhance the learning performance. Specifically, we propose two\nhybrid quantum-classical neural networks to maximize the sum rate of a downlink\nsystem. The first one proposes a quantum neural network employing parameterized\nquantum circuits that follows a classical convolutional neural network. The\nclassical neural network can be jointly trained with the quantum neural network\nor pre-trained leading to a fine-tuning transfer learning method. The second\none designs a quantum convolutional neural network to better extract features\nfollowed by a classical deep neural network. Our results demonstrate the\nfeasibility of the proposed hybrid neural networks, and reveal that the first\nmethod can achieve similar sum rate performance compared to a benchmark\nclassical neural network with significantly less training parameters; while the\nsecond method can achieve higher sum rate especially in presence of many users\nstill with less training parameters. The robustness of the proposed methods is\nverified using both software simulators and hardware emulators considering\nnoisy intermediate-scale quantum devices.",
+    "pdf_link": "http://arxiv.org/pdf/2408.04747v1.pdf",
+    "authors": [
+      "Juping Zhang",
+      "Gan Zheng",
+      "Toshiaki Koike-Akino",
+      "Kai-Kit Wong",
+      "Fraser Burton"
+    ]
+  },
+  {
+    "title": "Cortex Neural Network: learning with Neural Network groups",
+    "text": "Cortex Neural Network: learning with Neural Network groups. Neural Network has been successfully applied to many real-world problems,\nsuch as image recognition and machine translation. However, for the current\narchitecture of neural networks, it is hard to perform complex cognitive tasks,\nfor example, to process the image and audio inputs together. Cortex, as an\nimportant architecture in the brain, is important for animals to perform the\ncomplex cognitive task. We view the architecture of Cortex in the brain as a\nmissing part in the design of the current artificial neural network. In this\npaper, we purpose Cortex Neural Network (CrtxNN). The Cortex Neural Network is\nan upper architecture of neural networks which motivated from cerebral cortex\nin the brain to handle different tasks in the same learning system. It is able\nto identify different tasks and solve them with different methods. In our\nimplementation, the Cortex Neural Network is able to process different\ncognitive tasks and perform reflection to get a higher accuracy. We provide a\nseries of experiments to examine the capability of the cortex architecture on\ntraditional neural networks. Our experiments proved its ability on the Cortex\nNeural Network can reach accuracy by 98.32% on MNIST and 62% on CIFAR10 at the\nsame time, which can promisingly reduce the loss by 40%.",
+    "pdf_link": "http://arxiv.org/pdf/1804.03313v1.pdf",
+    "authors": [
+      "Liyao Gao"
+    ]
+  },
+  {
+    "title": "Parametrical Neural Networks and Some Other Similar Architectures",
+    "text": "Parametrical Neural Networks and Some Other Similar Architectures. A review of works on associative neural networks accomplished during last\nfour years in the Institute of Optical Neural Technologies RAS is given. The\npresentation is based on description of parametrical neural networks (PNN). For\ntoday PNN have record recognizing characteristics (storage capacity, noise\nimmunity and speed of operation). Presentation of basic ideas and principles is\naccentuated.",
+    "pdf_link": "http://arxiv.org/pdf/cs/0608073v1.pdf",
+    "authors": [
+      "Leonid B. Litinskii"
+    ]
+  },
+  {
+    "title": "Assessing Intelligence in Artificial Neural Networks",
+    "text": "Assessing Intelligence in Artificial Neural Networks. The purpose of this work was to develop of metrics to assess network\narchitectures that balance neural network size and task performance. To this\nend, the concept of neural efficiency is introduced to measure neural layer\nutilization, and a second metric called artificial intelligence quotient (aIQ)\nwas created to balance neural network performance and neural network\nefficiency. To study aIQ and neural efficiency, two simple neural networks were\ntrained on MNIST: a fully connected network (LeNet-300-100) and a convolutional\nneural network (LeNet-5). The LeNet-5 network with the highest aIQ was 2.32%\nless accurate but contained 30,912 times fewer parameters than the highest\naccuracy network. Both batch normalization and dropout layers were found to\nincrease neural efficiency. Finally, high aIQ networks are shown to be\nmemorization and overtraining resistant, capable of learning proper digit\nclassification with an accuracy of 92.51% even when 75% of the class labels are\nrandomized. These results demonstrate the utility of aIQ and neural efficiency\nas metrics for balancing network performance and size.",
+    "pdf_link": "http://arxiv.org/pdf/2006.02909v1.pdf",
+    "authors": [
+      "Nicholas J. Schaub",
+      "Nathan Hotaling"
+    ]
+  },
+  {
+    "title": "Rational Neural Network Controllers",
+    "text": "Rational Neural Network Controllers. Neural networks have shown great success in many machine learning related\ntasks, due to their ability to act as general function approximators. Recent\nwork has demonstrated the effectiveness of neural networks in control systems\n(known as neural feedback loops), most notably by using a neural network as a\ncontroller. However, one of the big challenges of this approach is that neural\nnetworks have been shown to be sensitive to adversarial attacks. This means\nthat, unless they are designed properly, they are not an ideal candidate for\ncontrollers due to issues with robustness and uncertainty, which are pivotal\naspects of control systems. There has been initial work on robustness to both\nanalyse and design dynamical systems with neural network controllers. However,\none prominent issue with these methods is that they use existing neural network\narchitectures tailored for traditional machine learning tasks. These structures\nmay not be appropriate for neural network controllers and it is important to\nconsider alternative architectures. This paper considers rational neural\nnetworks and presents novel rational activation functions, which can be used\neffectively in robustness problems for neural feedback loops. Rational\nactivation functions are replaced by a general rational neural network\nstructure, which is convex in the neural network's parameters. A method is\nproposed to recover a stabilising controller from a Sum of Squares feasibility\ntest. This approach is then applied to a refined rational neural network which\nis more compatible with Sum of Squares programming. Numerical examples show\nthat this method can successfully recover stabilising rational neural network\ncontrollers for neural feedback loops with non-linear plants with noise and\nparametric uncertainty.",
+    "pdf_link": "http://arxiv.org/pdf/2307.06287v1.pdf",
+    "authors": [
+      "Matthew Newton",
+      "Antonis Papachristodoulou"
+    ]
+  },
+  {
+    "title": "Asymptotic Theory of Expectile Neural Networks",
+    "text": "Asymptotic Theory of Expectile Neural Networks. Neural networks are becoming an increasingly important tool in applications.\nHowever, neural networks are not widely used in statistical genetics. In this\npaper, we propose a new neural networks method called expectile neural\nnetworks. When the size of parameter is too large, the standard maximum\nlikelihood procedures may not work. We use sieve method to constrain parameter\nspace. And we prove its consistency and normality under nonparametric\nregression framework.",
+    "pdf_link": "http://arxiv.org/pdf/2011.01218v1.pdf",
+    "authors": [
+      "Jinghang Lin",
+      "Xiaoxi Shen",
+      "Qing Lu"
+    ]
+  },
+  {
+    "title": "Combining Recurrent and Convolutional Neural Networks for Relation\n  Classification",
+    "text": "Combining Recurrent and Convolutional Neural Networks for Relation\n  Classification. This paper investigates two different neural architectures for the task of\nrelation classification: convolutional neural networks and recurrent neural\nnetworks. For both models, we demonstrate the effect of different architectural\nchoices. We present a new context representation for convolutional neural\nnetworks for relation classification (extended middle context). Furthermore, we\npropose connectionist bi-directional recurrent neural networks and introduce\nranking loss for their optimization. Finally, we show that combining\nconvolutional and recurrent neural networks using a simple voting scheme is\naccurate enough to improve results. Our neural models achieve state-of-the-art\nresults on the SemEval 2010 relation classification task.",
+    "pdf_link": "http://arxiv.org/pdf/1605.07333v1.pdf",
+    "authors": [
+      "Ngoc Thang Vu",
+      "Heike Adel",
+      "Pankaj Gupta",
+      "Hinrich Sch\u00fctze"
+    ]
+  },
+  {
+    "title": "A Comprehensive Review of Spiking Neural Networks: Interpretation,\n  Optimization, Efficiency, and Best Practices",
+    "text": "A Comprehensive Review of Spiking Neural Networks: Interpretation,\n  Optimization, Efficiency, and Best Practices. Biological neural networks continue to inspire breakthroughs in neural\nnetwork performance. And yet, one key area of neural computation that has been\nunder-appreciated and under-investigated is biologically plausible,\nenergy-efficient spiking neural networks, whose potential is especially\nattractive for low-power, mobile, or otherwise hardware-constrained settings.\nWe present a literature review of recent developments in the interpretation,\noptimization, efficiency, and accuracy of spiking neural networks. Key\ncontributions include identification, discussion, and comparison of\ncutting-edge methods in spiking neural network optimization, energy-efficiency,\nand evaluation, starting from first principles so as to be accessible to new\npractitioners.",
+    "pdf_link": "http://arxiv.org/pdf/2303.10780v2.pdf",
+    "authors": [
+      "Kai Malcolm",
+      "Josue Casco-Rodriguez"
+    ]
+  },
+  {
+    "title": "Design and development of opto-neural processors for simulation of\n  neural networks trained in image detection for potential implementation in\n  hybrid robotics",
+    "text": "Design and development of opto-neural processors for simulation of\n  neural networks trained in image detection for potential implementation in\n  hybrid robotics. Neural networks have been employed for a wide range of processing\napplications like image processing, motor control, object detection and many\nothers. Living neural networks offer advantages of lower power consumption,\nfaster processing, and biological realism. Optogenetics offers high spatial and\ntemporal control over biological neurons and presents potential in training\nlive neural networks. This work proposes a simulated living neural network\ntrained indirectly by backpropagating STDP based algorithms using precision\nactivation by optogenetics achieving accuracy comparable to traditional neural\nnetwork training algorithms.",
+    "pdf_link": "http://arxiv.org/pdf/2401.10289v1.pdf",
+    "authors": [
+      "Sanjana Shetty"
+    ]
+  },
+  {
+    "title": "Convex Formulation of Overparameterized Deep Neural Networks",
+    "text": "Convex Formulation of Overparameterized Deep Neural Networks. Analysis of over-parameterized neural networks has drawn significant\nattention in recentyears. It was shown that such systems behave like convex\nsystems under various restrictedsettings, such as for two-level neural\nnetworks, and when learning is only restricted locally inthe so-called neural\ntangent kernel space around specialized initializations. However, there areno\ntheoretical techniques that can analyze fully trained deep neural networks\nencountered inpractice. This paper solves this fundamental problem by\ninvestigating such overparameterizeddeep neural networks when fully trained. We\ngeneralize a new technique called neural feature repopulation, originally\nintroduced in (Fang et al., 2019a) for two-level neural networks, to analyze\ndeep neural networks. It is shown that under suitable representations,\noverparameterized deep neural networks are inherently convex, and when\noptimized, the system can learn effective features suitable for the underlying\nlearning task under mild conditions. This new analysis is consistent with\nempirical observations that deep neural networks are capable of learning\nefficient feature representations. Therefore, the highly unexpected result of\nthis paper can satisfactorily explain the practical success of deep neural\nnetworks. Empirical studies confirm that predictions of our theory are\nconsistent with results observed in practice.",
+    "pdf_link": "http://arxiv.org/pdf/1911.07626v1.pdf",
+    "authors": [
+      "Cong Fang",
+      "Yihong Gu",
+      "Weizhong Zhang",
+      "Tong Zhang"
+    ]
+  },
+  {
+    "title": "Approximate Bisimulation Relations for Neural Networks and Application\n  to Assured Neural Network Compression",
+    "text": "Approximate Bisimulation Relations for Neural Networks and Application\n  to Assured Neural Network Compression. In this paper, we propose a concept of approximate bisimulation relation for\nfeedforward neural networks. In the framework of approximate bisimulation\nrelation, a novel neural network merging method is developed to compute the\napproximate bisimulation error between two neural networks based on\nreachability analysis of neural networks. The developed method is able to\nquantitatively measure the distance between the outputs of two neural networks\nwith the same inputs. Then, we apply the approximate bisimulation relation\nresults to perform neural networks model reduction and compute the compression\nprecision, i.e., assured neural networks compression. At last, using the\nassured neural network compression, we accelerate the verification processes of\nACAS Xu neural networks to illustrate the effectiveness and advantages of our\nproposed approximate bisimulation approach.",
+    "pdf_link": "http://arxiv.org/pdf/2202.01214v1.pdf",
+    "authors": [
+      "Weiming Xiang",
+      "Zhongzhu Shao"
+    ]
+  },
+  {
+    "title": "Optimal rates of approximation by shallow ReLU$^k$ neural networks and\n  applications to nonparametric regression",
+    "text": "Optimal rates of approximation by shallow ReLU$^k$ neural networks and\n  applications to nonparametric regression. We study the approximation capacity of some variation spaces corresponding to\nshallow ReLU$^k$ neural networks. It is shown that sufficiently smooth\nfunctions are contained in these spaces with finite variation norms. For\nfunctions with less smoothness, the approximation rates in terms of the\nvariation norm are established. Using these results, we are able to prove the\noptimal approximation rates in terms of the number of neurons for shallow\nReLU$^k$ neural networks. It is also shown how these results can be used to\nderive approximation bounds for deep neural networks and convolutional neural\nnetworks (CNNs). As applications, we study convergence rates for nonparametric\nregression using three ReLU neural network models: shallow neural network,\nover-parameterized neural network, and CNN. In particular, we show that shallow\nneural networks can achieve the minimax optimal rates for learning H\\\"older\nfunctions, which complements recent results for deep neural networks. It is\nalso proven that over-parameterized (deep or shallow) neural networks can\nachieve nearly optimal rates for nonparametric regression.",
+    "pdf_link": "http://arxiv.org/pdf/2304.01561v3.pdf",
+    "authors": [
+      "Yunfei Yang",
+      "Ding-Xuan Zhou"
+    ]
+  },
+  {
+    "title": "Understanding Vector-Valued Neural Networks and Their Relationship with\n  Real and Hypercomplex-Valued Neural Networks",
+    "text": "Understanding Vector-Valued Neural Networks and Their Relationship with\n  Real and Hypercomplex-Valued Neural Networks. Despite the many successful applications of deep learning models for\nmultidimensional signal and image processing, most traditional neural networks\nprocess data represented by (multidimensional) arrays of real numbers. The\nintercorrelation between feature channels is usually expected to be learned\nfrom the training data, requiring numerous parameters and careful training. In\ncontrast, vector-valued neural networks are conceived to process arrays of\nvectors and naturally consider the intercorrelation between feature channels.\nConsequently, they usually have fewer parameters and often undergo more robust\ntraining than traditional neural networks. This paper aims to present a broad\nframework for vector-valued neural networks, referred to as V-nets. In this\ncontext, hypercomplex-valued neural networks are regarded as vector-valued\nmodels with additional algebraic properties. Furthermore, this paper explains\nthe relationship between vector-valued and traditional neural networks.\nPrecisely, a vector-valued neural network can be obtained by placing\nrestrictions on a real-valued model to consider the intercorrelation between\nfeature channels. Finally, we show how V-nets, including hypercomplex-valued\nneural networks, can be implemented in current deep-learning libraries as\nreal-valued networks.",
+    "pdf_link": "http://arxiv.org/pdf/2309.07716v2.pdf",
+    "authors": [
+      "Marcos Eduardo Valle"
+    ]
+  },
+  {
+    "title": "One weird trick for parallelizing convolutional neural networks",
+    "text": "One weird trick for parallelizing convolutional neural networks. I present a new way to parallelize the training of convolutional neural\nnetworks across multiple GPUs. The method scales significantly better than all\nalternatives when applied to modern convolutional neural networks.",
+    "pdf_link": "http://arxiv.org/pdf/1404.5997v2.pdf",
+    "authors": [
+      "Alex Krizhevsky"
+    ]
+  },
+  {
+    "title": "Nonlinear Systems Identification Using Deep Dynamic Neural Networks",
+    "text": "Nonlinear Systems Identification Using Deep Dynamic Neural Networks. Neural networks are known to be effective function approximators. Recently,\ndeep neural networks have proven to be very effective in pattern recognition,\nclassification tasks and human-level control to model highly nonlinear\nrealworld systems. This paper investigates the effectiveness of deep neural\nnetworks in the modeling of dynamical systems with complex behavior. Three deep\nneural network structures are trained on sequential data, and we investigate\nthe effectiveness of these networks in modeling associated characteristics of\nthe underlying dynamical systems. We carry out similar evaluations on select\npublicly available system identification datasets. We demonstrate that deep\nneural networks are effective model estimators from input-output data",
+    "pdf_link": "http://arxiv.org/pdf/1610.01439v1.pdf",
+    "authors": [
+      "Olalekan Ogunmolu",
+      "Xuejun Gu",
+      "Steve Jiang",
+      "Nicholas Gans"
+    ]
+  },
+  {
+    "title": "Geometric Decomposition of Feed Forward Neural Networks",
+    "text": "Geometric Decomposition of Feed Forward Neural Networks. There have been several attempts to mathematically understand neural networks\nand many more from biological and computational perspectives. The field has\nexploded in the last decade, yet neural networks are still treated much like a\nblack box. In this work we describe a structure that is inherent to a feed\nforward neural network. This will provide a framework for future work on neural\nnetworks to improve training algorithms, compute the homology of the network,\nand other applications. Our approach takes a more geometric point of view and\nis unlike other attempts to mathematically understand neural networks that rely\non a functional perspective.",
+    "pdf_link": "http://arxiv.org/pdf/1612.02522v1.pdf",
+    "authors": [
+      "Sven Cattell"
+    ]
+  },
+  {
+    "title": "Neural Networks Architecture Evaluation in a Quantum Computer",
+    "text": "Neural Networks Architecture Evaluation in a Quantum Computer. In this work, we propose a quantum algorithm to evaluate neural networks\narchitectures named Quantum Neural Network Architecture Evaluation (QNNAE). The\nproposed algorithm is based on a quantum associative memory and the learning\nalgorithm for artificial neural networks. Unlike conventional algorithms for\nevaluating neural network architectures, QNNAE does not depend on\ninitialization of weights. The proposed algorithm has a binary output and\nresults in 0 with probability proportional to the performance of the network.\nAnd its computational cost is equal to the computational cost to train a neural\nnetwork.",
+    "pdf_link": "http://arxiv.org/pdf/1711.04759v1.pdf",
+    "authors": [
+      "Adenilton Jos\u00e9 da Silva",
+      "Rodolfo Luan F. de Oliveira"
+    ]
+  },
+  {
+    "title": "Building Compact and Robust Deep Neural Networks with Toeplitz Matrices",
+    "text": "Building Compact and Robust Deep Neural Networks with Toeplitz Matrices. Deep neural networks are state-of-the-art in a wide variety of tasks,\nhowever, they exhibit important limitations which hinder their use and\ndeployment in real-world applications. When developing and training neural\nnetworks, the accuracy should not be the only concern, neural networks must\nalso be cost-effective and reliable. Although accurate, large neural networks\noften lack these properties. This thesis focuses on the problem of training\nneural networks which are not only accurate but also compact, easy to train,\nreliable and robust to adversarial examples. To tackle these problems, we\nleverage the properties of structured matrices from the Toeplitz family to\nbuild compact and secure neural networks.",
+    "pdf_link": "http://arxiv.org/pdf/2109.00959v1.pdf",
+    "authors": [
+      "Alexandre Araujo"
+    ]
+  },
+  {
+    "title": "Application of Neural Network in Optimization of Chemical Process",
+    "text": "Application of Neural Network in Optimization of Chemical Process. Artificial neural network (ANN) has been widely used due to its strong\nnonlinear mapping ability, fault tolerance and self-learning ability. This\narticle summarizes the development history of artificial neural networks,\nintroduces three common neural network types, BP neural network, RBF neural\nnetwork and convolutional neural network, and focuses on the practical\napplication in chemical process optimization, especially the results achieved\nin multi-objective control optimization and process parameter improvement.",
+    "pdf_link": "http://arxiv.org/pdf/2110.04942v1.pdf",
+    "authors": [
+      "Fei Liang",
+      "Taowen Zhang"
+    ]
+  },
+  {
+    "title": "Compact Matrix Quantum Group Equivariant Neural Networks",
+    "text": "Compact Matrix Quantum Group Equivariant Neural Networks. We derive the existence of a new type of neural network, called a compact\nmatrix quantum group equivariant neural network, that learns from data that has\nan underlying quantum symmetry. We apply the Woronowicz formulation of\nTannaka-Krein duality to characterise the weight matrices that appear in these\nneural networks for any easy compact matrix quantum group. We show that compact\nmatrix quantum group equivariant neural networks contain, as a subclass, all\ncompact matrix group equivariant neural networks. Moreover, we obtain\ncharacterisations of the weight matrices for many compact matrix group\nequivariant neural networks that have not previously appeared in the machine\nlearning literature.",
+    "pdf_link": "http://arxiv.org/pdf/2311.06358v1.pdf",
+    "authors": [
+      "Edward Pearce-Crump"
+    ]
+  },
+  {
+    "title": "Universal Approximation Theorem for Vector- and Hypercomplex-Valued\n  Neural Networks",
+    "text": "Universal Approximation Theorem for Vector- and Hypercomplex-Valued\n  Neural Networks. The universal approximation theorem states that a neural network with one\nhidden layer can approximate continuous functions on compact sets with any\ndesired precision. This theorem supports using neural networks for various\napplications, including regression and classification tasks. Furthermore, it is\nvalid for real-valued neural networks and some hypercomplex-valued neural\nnetworks such as complex-, quaternion-, tessarine-, and Clifford-valued neural\nnetworks. However, hypercomplex-valued neural networks are a type of\nvector-valued neural network defined on an algebra with additional algebraic or\ngeometric properties. This paper extends the universal approximation theorem\nfor a wide range of vector-valued neural networks, including\nhypercomplex-valued models as particular instances. Precisely, we introduce the\nconcept of non-degenerate algebra and state the universal approximation theorem\nfor neural networks defined on such algebras.",
+    "pdf_link": "http://arxiv.org/pdf/2401.02277v2.pdf",
+    "authors": [
+      "Marcos Eduardo Valle",
+      "Wington L. Vital",
+      "Guilherme Vieira"
+    ]
+  },
+  {
+    "title": "Detecting Neural Trojans Through Merkle Trees",
+    "text": "Detecting Neural Trojans Through Merkle Trees. Deep neural networks are utilized in a growing number of industries. Much of\nthe current literature focuses on the applications of deep neural networks\nwithout discussing the security of the network itself. One security issue\nfacing deep neural networks is neural trojans. Through a neural trojan, a\nmalicious actor may force the deep neural network to act in unintended ways.\nSeveral potential defenses have been proposed, but they are computationally\nexpensive, complex, or unusable in commercial applications. We propose Merkle\ntrees as a novel way to detect and isolate neural trojans.",
+    "pdf_link": "http://arxiv.org/pdf/2306.05368v1.pdf",
+    "authors": [
+      "Joshua Strubel"
+    ]
+  },
+  {
+    "title": "Performance Analysis Of Neural Network Models For Oxazolines And\n  Oxazoles Derivatives Descriptor Dataset",
+    "text": "Performance Analysis Of Neural Network Models For Oxazolines And\n  Oxazoles Derivatives Descriptor Dataset. Neural networks have been used successfully to a broad range of areas such as\nbusiness, data mining, drug discovery and biology. In medicine, neural networks\nhave been applied widely in medical diagnosis, detection and evaluation of new\ndrugs and treatment cost estimation. In addition, neural networks have begin\npractice in data mining strategies for the aim of prediction, knowledge\ndiscovery. This paper will present the application of neural networks for the\nprediction and analysis of antitubercular activity of Oxazolines and Oxazoles\nderivatives. This study presents techniques based on the development of Single\nhidden layer neural network (SHLFFNN), Gradient Descent Back propagation neural\nnetwork (GDBPNN), Gradient Descent Back propagation with momentum neural\nnetwork (GDBPMNN), Back propagation with Weight decay neural network (BPWDNN)\nand Quantile regression neural network (QRNN) of artificial neural network\n(ANN) models Here, we comparatively evaluate the performance of five neural\nnetwork techniques. The evaluation of the efficiency of each model by ways of\nbenchmark experiments is an accepted application. Cross-validation and\nresampling techniques are commonly used to derive point estimates of the\nperformances which are compared to identify methods with good properties.\nPredictive accuracy was evaluated using the root mean squared error (RMSE),\nCoefficient determination(???), mean absolute error(MAE), mean percentage\nerror(MPE) and relative square error(RSE). We found that all five neural\nnetwork models were able to produce feasible models. QRNN model is outperforms\nwith all statistical tests amongst other four models.",
+    "pdf_link": "http://arxiv.org/pdf/1312.2853v1.pdf",
+    "authors": [
+      "Doreswamy",
+      "Chanabasayya . M. Vastrad"
+    ]
+  },
+  {
+    "title": "Why Quantization Improves Generalization: NTK of Binary Weight Neural\n  Networks",
+    "text": "Why Quantization Improves Generalization: NTK of Binary Weight Neural\n  Networks. Quantized neural networks have drawn a lot of attention as they reduce the\nspace and computational complexity during the inference. Moreover, there has\nbeen folklore that quantization acts as an implicit regularizer and thus can\nimprove the generalizability of neural networks, yet no existing work\nformalizes this interesting folklore. In this paper, we take the binary weights\nin a neural network as random variables under stochastic rounding, and study\nthe distribution propagation over different layers in the neural network. We\npropose a quasi neural network to approximate the distribution propagation,\nwhich is a neural network with continuous parameters and smooth activation\nfunction. We derive the neural tangent kernel (NTK) for this quasi neural\nnetwork, and show that the eigenvalue of NTK decays at approximately\nexponential rate, which is comparable to that of Gaussian kernel with\nrandomized scale. This in turn indicates that the Reproducing Kernel Hilbert\nSpace (RKHS) of a binary weight neural network covers a strict subset of\nfunctions compared with the one with real value weights. We use experiments to\nverify that the quasi neural network we proposed can well approximate binary\nweight neural network. Furthermore, binary weight neural network gives a lower\ngeneralization gap compared with real value weight neural network, which is\nsimilar to the difference between Gaussian kernel and Laplace kernel.",
+    "pdf_link": "http://arxiv.org/pdf/2206.05916v1.pdf",
+    "authors": [
+      "Kaiqi Zhang",
+      "Ming Yin",
+      "Yu-Xiang Wang"
+    ]
+  },
+  {
+    "title": "Bayesian Neural Networks: Essentials",
+    "text": "Bayesian Neural Networks: Essentials. Bayesian neural networks utilize probabilistic layers that capture\nuncertainty over weights and activations, and are trained using Bayesian\ninference. Since these probabilistic layers are designed to be drop-in\nreplacement of their deterministic counter parts, Bayesian neural networks\nprovide a direct and natural way to extend conventional deep neural networks to\nsupport probabilistic deep learning. However, it is nontrivial to understand,\ndesign and train Bayesian neural networks due to their complexities. We discuss\nthe essentials of Bayesian neural networks including duality (deep neural\nnetworks, probabilistic models), approximate Bayesian inference, Bayesian\npriors, Bayesian posteriors, and deep variational learning. We use TensorFlow\nProbability APIs and code examples for illustration. The main problem with\nBayesian neural networks is that the architecture of deep neural networks makes\nit quite redundant, and costly, to account for uncertainty for a large number\nof successive layers. Hybrid Bayesian neural networks, which use few\nprobabilistic layers judicially positioned in the networks, provide a practical\nsolution.",
+    "pdf_link": "http://arxiv.org/pdf/2106.13594v1.pdf",
+    "authors": [
+      "Daniel T. Chang"
+    ]
+  },
+  {
+    "title": "Fourier Neural Networks for Function Approximation",
+    "text": "Fourier Neural Networks for Function Approximation. The success of Neural networks in providing miraculous results when applied\nto a wide variety of tasks is astonishing. Insight in the working can be\nobtained by studying the universal approximation property of neural networks.\nIt is proved extensively that neural networks are universal approximators.\nFurther it is proved that deep Neural networks are better approximators. It is\nspecifically proved that for a narrow neural network to approximate a function\nwhich is otherwise implemented by a deep Neural network, the network take\nexponentially large number of neurons. In this work, we have implemented\nexisting methodologies for a variety of synthetic functions and identified\ntheir deficiencies. Further, we examined that Fourier neural network is able to\nperform fairly good with only two layers in the neural network. A modified\nFourier Neural network which has sinusoidal activation and two hidden layer is\nproposed and the results are tabulated.",
+    "pdf_link": "http://arxiv.org/pdf/2111.08438v1.pdf",
+    "authors": [
+      "R Subhash Chandra Bose",
+      "Kakarla Yaswanth"
+    ]
+  },
+  {
+    "title": "Genetic cellular neural networks for generating three-dimensional\n  geometry",
+    "text": "Genetic cellular neural networks for generating three-dimensional\n  geometry. There are a number of ways to procedurally generate interesting\nthree-dimensional shapes, and a method where a cellular neural network is\ncombined with a mesh growth algorithm is presented here. The aim is to create a\nshape from a genetic code in such a way that a crude search can find\ninteresting shapes. Identical neural networks are placed at each vertex of a\nmesh which can communicate with neural networks on neighboring vertices. The\noutput of the neural networks determine how the mesh grows, allowing\ninteresting shapes to be produced emergently, mimicking some of the complexity\nof biological organism development. Since the neural networks' parameters can\nbe freely mutated, the approach is amenable for use in a genetic algorithm.",
+    "pdf_link": "http://arxiv.org/pdf/1603.08551v1.pdf",
+    "authors": [
+      "Hugo Martay"
+    ]
+  },
+  {
+    "title": "Survey of Dropout Methods for Deep Neural Networks",
+    "text": "Survey of Dropout Methods for Deep Neural Networks. Dropout methods are a family of stochastic techniques used in neural network\ntraining or inference that have generated significant research interest and are\nwidely used in practice. They have been successfully applied in neural network\nregularization, model compression, and in measuring the uncertainty of neural\nnetwork outputs. While original formulated for dense neural network layers,\nrecent advances have made dropout methods also applicable to convolutional and\nrecurrent neural network layers. This paper summarizes the history of dropout\nmethods, their various applications, and current areas of research interest.\nImportant proposed methods are described in additional detail.",
+    "pdf_link": "http://arxiv.org/pdf/1904.13310v2.pdf",
+    "authors": [
+      "Alex Labach",
+      "Hojjat Salehinejad",
+      "Shahrokh Valaee"
+    ]
+  },
+  {
+    "title": "General Regression Neural Networks, Radial Basis Function Neural\n  Networks, Support Vector Machines, and Feedforward Neural Networks",
+    "text": "General Regression Neural Networks, Radial Basis Function Neural\n  Networks, Support Vector Machines, and Feedforward Neural Networks. The aim of this project is to develop a code to discover the optimal sigma\nvalue that maximum the F1 score and the optimal sigma value that maximizes the\naccuracy and to find out if they are the same. Four algorithms which can be\nused to solve this problem are: Genetic Regression Neural Networks (GRNNs),\nRadial Based Function (RBF) Neural Networks (RBFNNs), Support Vector Machines\n(SVMs) and Feedforward Neural Network (FFNNs).",
+    "pdf_link": "http://arxiv.org/pdf/1911.07115v1.pdf",
+    "authors": [
+      "Alison Jenkins",
+      "Vinika Gupta",
+      "Mary Lenoir"
+    ]
+  },
+  {
+    "title": "On neural network kernels and the storage capacity problem",
+    "text": "On neural network kernels and the storage capacity problem. In this short note, we reify the connection between work on the storage\ncapacity problem in wide two-layer treelike neural networks and the\nrapidly-growing body of literature on kernel limits of wide neural networks.\nConcretely, we observe that the \"effective order parameter\" studied in the\nstatistical mechanics literature is exactly equivalent to the infinite-width\nNeural Network Gaussian Process Kernel. This correspondence connects the\nexpressivity and trainability of wide two-layer neural networks.",
+    "pdf_link": "http://arxiv.org/pdf/2201.04669v1.pdf",
+    "authors": [
+      "Jacob A. Zavatone-Veth",
+      "Cengiz Pehlevan"
+    ]
+  },
+  {
+    "title": "Unary Coding for Neural Network Learning",
+    "text": "Unary Coding for Neural Network Learning. This paper presents some properties of unary coding of significance for\nbiological learning and instantaneously trained neural networks.",
+    "pdf_link": "http://arxiv.org/pdf/1009.4495v1.pdf",
+    "authors": [
+      "Subhash Kak"
+    ]
+  },
+  {
+    "title": "Deep Neural Networks - A Brief History",
+    "text": "Deep Neural Networks - A Brief History. Introduction to deep neural networks and their history.",
+    "pdf_link": "http://arxiv.org/pdf/1701.05549v1.pdf",
+    "authors": [
+      "Krzysztof J. Cios"
+    ]
+  },
+  {
+    "title": "GPU Acceleration of Sparse Neural Networks",
+    "text": "GPU Acceleration of Sparse Neural Networks. In this paper, we use graphics processing units(GPU) to accelerate sparse and\narbitrary structured neural networks. Sparse networks have nodes in the network\nthat are not fully connected with nodes in preceding and following layers, and\narbitrary structure neural networks have different number of nodes in each\nlayers. Sparse Neural networks with arbitrary structures are generally created\nin the processes like neural network pruning and evolutionary machine learning\nstrategies. We show that we can gain significant speedup for full activation of\nsuch neural networks using graphical processing units. We do a prepossessing\nstep to determine dependency groups for all the nodes in a network, and use\nthat information to guide the progression of activation in the neural network.\nThen we compute activation for each nodes in its own separate thread in the\nGPU, which allows for massive parallelization. We use CUDA framework to\nimplement our approach and compare the results of sequential and GPU\nimplementations. Our results show that the activation of sparse neural networks\nlends very well to GPU acceleration and can help speed up machine learning\nstrategies which generate such networks or other processes that have similar\nstructure.",
+    "pdf_link": "http://arxiv.org/pdf/2005.04347v1.pdf",
+    "authors": [
+      "Aavaas Gajurel",
+      "Sushil J. Louis",
+      "Frederick C Harris"
+    ]
+  },
+  {
+    "title": "Neural Network Pruning as Spectrum Preserving Process",
+    "text": "Neural Network Pruning as Spectrum Preserving Process. Neural networks have achieved remarkable performance in various application\ndomains. Nevertheless, a large number of weights in pre-trained deep neural\nnetworks prohibit them from being deployed on smartphones and embedded systems.\nIt is highly desirable to obtain lightweight versions of neural networks for\ninference in edge devices. Many cost-effective approaches were proposed to\nprune dense and convolutional layers that are common in deep neural networks\nand dominant in the parameter space. However, a unified theoretical foundation\nfor the problem mostly is missing. In this paper, we identify the close\nconnection between matrix spectrum learning and neural network training for\ndense and convolutional layers and argue that weight pruning is essentially a\nmatrix sparsification process to preserve the spectrum. Based on the analysis,\nwe also propose a matrix sparsification algorithm tailored for neural network\npruning that yields better pruning result. We carefully design and conduct\nexperiments to support our arguments. Hence we provide a consolidated viewpoint\nfor neural network pruning and enhance the interpretability of deep neural\nnetworks by identifying and preserving the critical neural weights.",
+    "pdf_link": "http://arxiv.org/pdf/2307.08982v1.pdf",
+    "authors": [
+      "Shibo Yao",
+      "Dantong Yu",
+      "Ioannis Koutis"
+    ]
+  },
+  {
+    "title": "On Hiding Neural Networks Inside Neural Networks",
+    "text": "On Hiding Neural Networks Inside Neural Networks. Modern neural networks often contain significantly more parameters than the\nsize of their training data. We show that this excess capacity provides an\nopportunity for embedding secret machine learning models within a trained\nneural network. Our novel framework hides the existence of a secret neural\nnetwork with arbitrary desired functionality within a carrier network. We prove\ntheoretically that the secret network's detection is computationally infeasible\nand demonstrate empirically that the carrier network does not compromise the\nsecret network's disguise. Our paper introduces a previously unknown\nsteganographic technique that can be exploited by adversaries if left\nunchecked.",
+    "pdf_link": "http://arxiv.org/pdf/2002.10078v3.pdf",
+    "authors": [
+      "Chuan Guo",
+      "Ruihan Wu",
+      "Kilian Q. Weinberger"
+    ]
+  },
+  {
+    "title": "A New Constructive Method to Optimize Neural Network Architecture and\n  Generalization",
+    "text": "A New Constructive Method to Optimize Neural Network Architecture and\n  Generalization. In this paper, after analyzing the reasons of poor generalization and\noverfitting in neural networks, we consider some noise data as a singular value\nof a continuous function - jump discontinuity point. The continuous part can be\napproximated with the simplest neural networks, which have good generalization\nperformance and optimal network architecture, by traditional algorithms such as\nconstructive algorithm for feed-forward neural networks with incremental\ntraining, BP algorithm, ELM algorithm, various constructive algorithm, RBF\napproximation and SVM. At the same time, we will construct RBF neural networks\nto fit the singular value with every error in, and we prove that a function\nwith jumping discontinuity points can be approximated by the simplest neural\nnetworks with a decay RBF neural networks in by each error, and a function with\njumping discontinuity point can be constructively approximated by a decay RBF\nneural networks in by each error and the constructive part have no\ngeneralization influence to the whole machine learning system which will\noptimize neural network architecture and generalization performance, reduce the\noverfitting phenomenon by avoid fitting the noisy data.",
+    "pdf_link": "http://arxiv.org/pdf/1302.0324v1.pdf",
+    "authors": [
+      "Hou Muzhou",
+      "Moon Ho Lee"
+    ]
+  },
+  {
+    "title": "Deep physical neural networks enabled by a backpropagation algorithm for\n  arbitrary physical systems",
+    "text": "Deep physical neural networks enabled by a backpropagation algorithm for\n  arbitrary physical systems. Deep neural networks have become a pervasive tool in science and engineering.\nHowever, modern deep neural networks' growing energy requirements now\nincreasingly limit their scaling and broader use. We propose a radical\nalternative for implementing deep neural network models: Physical Neural\nNetworks. We introduce a hybrid physical-digital algorithm called Physics-Aware\nTraining to efficiently train sequences of controllable physical systems to act\nas deep neural networks. This method automatically trains the functionality of\nany sequence of real physical systems, directly, using backpropagation, the\nsame technique used for modern deep neural networks. To illustrate their\ngenerality, we demonstrate physical neural networks with three diverse physical\nsystems-optical, mechanical, and electrical. Physical neural networks may\nfacilitate unconventional machine learning hardware that is orders of magnitude\nfaster and more energy efficient than conventional electronic processors.",
+    "pdf_link": "http://arxiv.org/pdf/2104.13386v1.pdf",
+    "authors": [
+      "Logan G. Wright",
+      "Tatsuhiro Onodera",
+      "Martin M. Stein",
+      "Tianyu Wang",
+      "Darren T. Schachter",
+      "Zoey Hu",
+      "Peter L. McMahon"
+    ]
+  },
+  {
+    "title": "Understanding Weight Similarity of Neural Networks via Chain\n  Normalization Rule and Hypothesis-Training-Testing",
+    "text": "Understanding Weight Similarity of Neural Networks via Chain\n  Normalization Rule and Hypothesis-Training-Testing. We present a weight similarity measure method that can quantify the weight\nsimilarity of non-convex neural networks. To understand the weight similarity\nof different trained models, we propose to extract the feature representation\nfrom the weights of neural networks. We first normalize the weights of neural\nnetworks by introducing a chain normalization rule, which is used for weight\nrepresentation learning and weight similarity measure. We extend the\ntraditional hypothesis-testing method to a hypothesis-training-testing\nstatistical inference method to validate the hypothesis on the weight\nsimilarity of neural networks. With the chain normalization rule and the new\nstatistical inference, we study the weight similarity measure on Multi-Layer\nPerceptron (MLP), Convolutional Neural Network (CNN), and Recurrent Neural\nNetwork (RNN), and find that the weights of an identical neural network\noptimized with the Stochastic Gradient Descent (SGD) algorithm converge to a\nsimilar local solution in a metric space. The weight similarity measure\nprovides more insight into the local solutions of neural networks. Experiments\non several datasets consistently validate the hypothesis of weight similarity\nmeasure.",
+    "pdf_link": "http://arxiv.org/pdf/2208.04369v1.pdf",
+    "authors": [
+      "Guangcong Wang",
+      "Guangrun Wang",
+      "Wenqi Liang",
+      "Jianhuang Lai"
+    ]
+  },
+  {
+    "title": "Consistency of Neural Networks with Regularization",
+    "text": "Consistency of Neural Networks with Regularization. Neural networks have attracted a lot of attention due to its success in\napplications such as natural language processing and computer vision. For large\nscale data, due to the tremendous number of parameters in neural networks,\noverfitting is an issue in training neural networks. To avoid overfitting, one\ncommon approach is to penalize the parameters especially the weights in neural\nnetworks. Although neural networks has demonstrated its advantages in many\napplications, the theoretical foundation of penalized neural networks has not\nbeen well-established. Our goal of this paper is to propose the general\nframework of neural networks with regularization and prove its consistency.\nUnder certain conditions, the estimated neural network will converge to true\nunderlying function as the sample size increases. The method of sieves and the\ntheory on minimal neural networks are used to overcome the issue of\nunidentifiability for the parameters. Two types of activation functions:\nhyperbolic tangent function(Tanh) and rectified linear unit(ReLU) have been\ntaken into consideration. Simulations have been conducted to verify the\nvalidation of theorem of consistency.",
+    "pdf_link": "http://arxiv.org/pdf/2207.01538v1.pdf",
+    "authors": [
+      "Xiaoxi Shen",
+      "Jinghang Lin"
+    ]
+  },
+  {
+    "title": "Graph Metanetworks for Processing Diverse Neural Architectures",
+    "text": "Graph Metanetworks for Processing Diverse Neural Architectures. Neural networks efficiently encode learned information within their\nparameters. Consequently, many tasks can be unified by treating neural networks\nthemselves as input data. When doing so, recent studies demonstrated the\nimportance of accounting for the symmetries and geometry of parameter spaces.\nHowever, those works developed architectures tailored to specific networks such\nas MLPs and CNNs without normalization layers, and generalizing such\narchitectures to other types of networks can be challenging. In this work, we\novercome these challenges by building new metanetworks - neural networks that\ntake weights from other neural networks as input. Put simply, we carefully\nbuild graphs representing the input neural networks and process the graphs\nusing graph neural networks. Our approach, Graph Metanetworks (GMNs),\ngeneralizes to neural architectures where competing methods struggle, such as\nmulti-head attention layers, normalization layers, convolutional layers, ResNet\nblocks, and group-equivariant linear layers. We prove that GMNs are expressive\nand equivariant to parameter permutation symmetries that leave the input neural\nnetwork functions unchanged. We validate the effectiveness of our method on\nseveral metanetwork tasks over diverse neural network architectures.",
+    "pdf_link": "http://arxiv.org/pdf/2312.04501v2.pdf",
+    "authors": [
+      "Derek Lim",
+      "Haggai Maron",
+      "Marc T. Law",
+      "Jonathan Lorraine",
+      "James Lucas"
+    ]
+  },
+  {
+    "title": "Bayesian Learning of Neural Networks for Signal/Background\n  Discrimination in Particle Physics",
+    "text": "Bayesian Learning of Neural Networks for Signal/Background\n  Discrimination in Particle Physics. Neural networks are used extensively in classification problems in particle\nphysics research. Since the training of neural networks can be viewed as a\nproblem of inference, Bayesian learning of neural networks can provide more\noptimal and robust results than conventional learning methods. We have\ninvestigated the use of Bayesian neural networks for signal/background\ndiscrimination in the search for second generation leptoquarks at the Tevatron,\nas an example. We present a comparison of the results obtained from the\nconventional training of feedforward neural networks and networks trained with\nBayesian methods.",
+    "pdf_link": "http://arxiv.org/pdf/0707.0930v1.pdf",
+    "authors": [
+      "Michael Pogwizd",
+      "Laura Jane Elgass",
+      "Pushpalatha C. Bhat"
+    ]
+  },
+  {
+    "title": "Deep Neural Networks for Pattern Recognition",
+    "text": "Deep Neural Networks for Pattern Recognition. In the field of pattern recognition research, the method of using deep neural\nnetworks based on improved computing hardware recently attracted attention\nbecause of their superior accuracy compared to conventional methods. Deep\nneural networks simulate the human visual system and achieve human equivalent\naccuracy in image classification, object detection, and segmentation. This\nchapter introduces the basic structure of deep neural networks that simulate\nhuman neural networks. Then we identify the operational processes and\napplications of conditional generative adversarial networks, which are being\nactively researched based on the bottom-up and top-down mechanisms, the most\nimportant functions of the human visual perception process. Finally, recent\ndevelopments in training strategies for effective learning of complex deep\nneural networks are addressed.",
+    "pdf_link": "http://arxiv.org/pdf/1809.09645v1.pdf",
+    "authors": [
+      "Kyongsik Yun",
+      "Alexander Huyen",
+      "Thomas Lu"
+    ]
+  },
+  {
+    "title": "Evidence, Definitions and Algorithms regarding the Existence of\n  Cohesive-Convergence Groups in Neural Network Optimization",
+    "text": "Evidence, Definitions and Algorithms regarding the Existence of\n  Cohesive-Convergence Groups in Neural Network Optimization. Understanding the convergence process of neural networks is one of the most\ncomplex and crucial issues in the field of machine learning. Despite the close\nassociation of notable successes in this domain with the convergence of\nartificial neural networks, this concept remains predominantly theoretical. In\nreality, due to the non-convex nature of the optimization problems that\nartificial neural networks tackle, very few trained networks actually achieve\nconvergence. To expand recent research efforts on artificial-neural-network\nconvergence, this paper will discuss a different approach based on observations\nof cohesive-convergence groups emerging during the optimization process of an\nartificial neural network.",
+    "pdf_link": "http://arxiv.org/pdf/2403.05610v1.pdf",
+    "authors": [
+      "Thien An L. Nguyen"
+    ]
+  },
+  {
+    "title": "Hybrid deep neural network based prediction method for unsteady flows\n  with moving boundaries",
+    "text": "Hybrid deep neural network based prediction method for unsteady flows\n  with moving boundaries. A novel hybrid deep neural network architecture is designed to capture the\nspatial-temporal features of unsteady flows around moving boundaries directly\nfrom high-dimensional unsteady flow fields data. The hybrid deep neural network\nis constituted by the convolutional neural network (CNN), improved\nconvolutional Long-Short Term Memory neural network (ConvLSTM) and\ndeconvolutional neural network (DeCNN). Flow fields at future time step can be\npredicted through flow fields by previous time steps and boundary positions at\nthose steps by the novel hybrid deep neural network. Unsteady wake flows around\na forced oscillation cylinder with various amplitudes are calculated to\nestablish the datasets as training samples for training the hybrid deep neural\nnetworks. The trained hybrid deep neural networks are then tested by predicting\nthe unsteady flow fields around a forced oscillation cylinder with new\namplitude. The effect of neural network structure parameters on prediction\naccuracy was analyzed. The hybrid deep neural network, constituted by the best\nparameter combination, is used to predict the flow fields in the future time.\nThe predicted flow fields are in good agreement with those calculated directly\nby computational fluid dynamic solver, which means that this kind of deep\nneural network can capture accurate spatial-temporal information from the\nspatial-temporal series of unsteady flows around moving boundaries. The result\nshows the potential capability of this kind novel hybrid deep neural network in\nflow control for vibrating cylinder, where the fast calculation of\nhigh-dimensional nonlinear unsteady flow around moving boundaries is needed.",
+    "pdf_link": "http://arxiv.org/pdf/2006.00690v1.pdf",
+    "authors": [
+      "Renkun Han",
+      "Zhong Zhang",
+      "Yixing Wang",
+      "Ziyang Liu",
+      "Yang Zhang",
+      "Gang Chen"
+    ]
+  },
+  {
+    "title": "Neural network learning dynamics in a path integral framework",
+    "text": "Neural network learning dynamics in a path integral framework. A path-integral formalism is proposed for studying the dynamical evolution in\ntime of patterns in an artificial neural network in the presence of noise. An\neffective cost function is constructed which determines the unique global\nminimum of the neural network system. The perturbative method discussed also\nprovides a way for determining the storage capacity of the network.",
+    "pdf_link": "http://arxiv.org/pdf/cond-mat/0308503v1.pdf",
+    "authors": [
+      "J. Balakrishnan"
+    ]
+  }
+]

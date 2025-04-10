@@ -42,7 +42,7 @@ def retrieve_documents(query, model, index, documents, top_k=3):
 
 if __name__ == '__main__':
     # Load the dataset (adjust filename as needed)
-    data_path = os.path.join('..','data', 'raw', 'arxiv_documents.json')
+    data_path = os.path.join('..','data', 'raw', 'arxiv_combined_documents.json')
     documents = load_documents(data_path)
     print(f"Loaded {len(documents)} documents.")
     

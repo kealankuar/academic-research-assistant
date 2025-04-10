@@ -37,7 +37,7 @@ def main():
     # Construct the path to your dataset from the project root
     src_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.join(src_dir, '..')
-    data_file = os.path.join(project_root, 'data', 'raw', 'arxiv_documents.json')
+    data_file = os.path.join(project_root, 'data', 'raw', 'arxiv_combined_documents.json')
     
     # Load the documents
     documents = load_documents(data_file)

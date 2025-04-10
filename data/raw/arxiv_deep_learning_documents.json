@@ -10,19 +10,19 @@
     ]
   },
   {
-    "title": "Concept-Oriented Deep Learning",
-    "text": "Concept-Oriented Deep Learning. Concepts are the foundation of human deep learning, understanding, and\nknowledge integration and transfer. We propose concept-oriented deep learning\n(CODL) which extends (machine) deep learning with concept representations and\nconceptual understanding capability. CODL addresses some of the major\nlimitations of deep learning: interpretability, transferability, contextual\nadaptation, and requirement for lots of labeled training data. We discuss the\nmajor aspects of CODL including concept graph, concept representations, concept\nexemplars, and concept representation learning systems supporting incremental\nand continual learning.",
-    "pdf_link": "http://arxiv.org/pdf/1806.01756v1.pdf",
-    "authors": [
-      "Daniel T Chang"
-    ]
-  },
-  {
     "title": "Deep learning research landscape & roadmap in a nutshell: past, present\n  and future -- Towards deep cortical learning",
     "text": "Deep learning research landscape & roadmap in a nutshell: past, present\n  and future -- Towards deep cortical learning. The past, present and future of deep learning is presented in this work.\nGiven this landscape & roadmap, we predict that deep cortical learning will be\nthe convergence of deep learning & cortical learning which builds an artificial\ncortical column ultimately.",
     "pdf_link": "http://arxiv.org/pdf/1908.02130v1.pdf",
     "authors": [
       "Aras R. Dargazany"
+    ]
+  },
+  {
+    "title": "Concept-Oriented Deep Learning",
+    "text": "Concept-Oriented Deep Learning. Concepts are the foundation of human deep learning, understanding, and\nknowledge integration and transfer. We propose concept-oriented deep learning\n(CODL) which extends (machine) deep learning with concept representations and\nconceptual understanding capability. CODL addresses some of the major\nlimitations of deep learning: interpretability, transferability, contextual\nadaptation, and requirement for lots of labeled training data. We discuss the\nmajor aspects of CODL including concept graph, concept representations, concept\nexemplars, and concept representation learning systems supporting incremental\nand continual learning.",
+    "pdf_link": "http://arxiv.org/pdf/1806.01756v1.pdf",
+    "authors": [
+      "Daniel T Chang"
     ]
   },
   {
@@ -164,25 +164,6 @@
     ]
   },
   {
-    "title": "What Really is Deep Learning Doing?",
-    "text": "What Really is Deep Learning Doing?. Deep learning has achieved a great success in many areas, from computer\nvision to natural language processing, to game playing, and much more. Yet,\nwhat deep learning is really doing is still an open question. There are a lot\nof works in this direction. For example, [5] tried to explain deep learning by\ngroup renormalization, and [6] tried to explain deep learning from the view of\nfunctional approximation. In order to address this very crucial question, here\nwe see deep learning from perspective of mechanical learning and learning\nmachine (see [1], [2]). From this particular angle, we can see deep learning\nmuch better and answer with confidence: What deep learning is really doing? why\nit works well, how it works, and how much data is necessary for learning. We\nalso will discuss advantages and disadvantages of deep learning at the end of\nthis work.",
-    "pdf_link": "http://arxiv.org/pdf/1711.03577v1.pdf",
-    "authors": [
-      "Chuyu Xiong"
-    ]
-  },
-  {
-    "title": "Transferability in Deep Learning: A Survey",
-    "text": "Transferability in Deep Learning: A Survey. The success of deep learning algorithms generally depends on large-scale\ndata, while humans appear to have inherent ability of knowledge transfer, by\nrecognizing and applying relevant knowledge from previous learning experiences\nwhen encountering and solving unseen tasks. Such an ability to acquire and\nreuse knowledge is known as transferability in deep learning. It has formed the\nlong-term quest towards making deep learning as data-efficient as human\nlearning, and has been motivating fruitful design of more powerful deep\nlearning algorithms. We present this survey to connect different isolated areas\nin deep learning with their relation to transferability, and to provide a\nunified and complete view to investigating transferability through the whole\nlifecycle of deep learning. The survey elaborates the fundamental goals and\nchallenges in parallel with the core principles and methods, covering recent\ncornerstones in deep architectures, pre-training, task adaptation and domain\nadaptation. This highlights unanswered questions on the appropriate objectives\nfor learning transferable knowledge and for adapting the knowledge to new tasks\nand domains, avoiding catastrophic forgetting and negative transfer. Finally,\nwe implement a benchmark and an open-source library, enabling a fair evaluation\nof deep learning methods in terms of transferability.",
-    "pdf_link": "http://arxiv.org/pdf/2201.05867v1.pdf",
-    "authors": [
-      "Junguang Jiang",
-      "Yang Shu",
-      "Jianmin Wang",
-      "Mingsheng Long"
-    ]
-  },
-  {
     "title": "Integrating Learning and Reasoning with Deep Logic Models",
     "text": "Integrating Learning and Reasoning with Deep Logic Models. Deep learning is very effective at jointly learning feature representations\nand classification models, especially when dealing with high dimensional input\npatterns. Probabilistic logic reasoning, on the other hand, is capable to take\nconsistent and robust decisions in complex environments. The integration of\ndeep learning and logic reasoning is still an open-research problem and it is\nconsidered to be the key for the development of real intelligent agents. This\npaper presents Deep Logic Models, which are deep graphical models integrating\ndeep learning and logic reasoning both for learning and inference. Deep Logic\nModels create an end-to-end differentiable architecture, where deep learners\nare embedded into a network implementing a continuous relaxation of the logic\nknowledge. The learning process allows to jointly learn the weights of the deep\nlearners and the meta-parameters controlling the high-level reasoning. The\nexperimental results show that the proposed methodology overtakes the\nlimitations of the other approaches that have been proposed to bridge deep\nlearning and reasoning.",
     "pdf_link": "http://arxiv.org/pdf/1901.04195v1.pdf",
@@ -210,6 +191,25 @@
     "pdf_link": "http://arxiv.org/pdf/2401.02349v2.pdf",
     "authors": [
       "Ezgi Korkmaz"
+    ]
+  },
+  {
+    "title": "Transferability in Deep Learning: A Survey",
+    "text": "Transferability in Deep Learning: A Survey. The success of deep learning algorithms generally depends on large-scale\ndata, while humans appear to have inherent ability of knowledge transfer, by\nrecognizing and applying relevant knowledge from previous learning experiences\nwhen encountering and solving unseen tasks. Such an ability to acquire and\nreuse knowledge is known as transferability in deep learning. It has formed the\nlong-term quest towards making deep learning as data-efficient as human\nlearning, and has been motivating fruitful design of more powerful deep\nlearning algorithms. We present this survey to connect different isolated areas\nin deep learning with their relation to transferability, and to provide a\nunified and complete view to investigating transferability through the whole\nlifecycle of deep learning. The survey elaborates the fundamental goals and\nchallenges in parallel with the core principles and methods, covering recent\ncornerstones in deep architectures, pre-training, task adaptation and domain\nadaptation. This highlights unanswered questions on the appropriate objectives\nfor learning transferable knowledge and for adapting the knowledge to new tasks\nand domains, avoiding catastrophic forgetting and negative transfer. Finally,\nwe implement a benchmark and an open-source library, enabling a fair evaluation\nof deep learning methods in terms of transferability.",
+    "pdf_link": "http://arxiv.org/pdf/2201.05867v1.pdf",
+    "authors": [
+      "Junguang Jiang",
+      "Yang Shu",
+      "Jianmin Wang",
+      "Mingsheng Long"
+    ]
+  },
+  {
+    "title": "What Really is Deep Learning Doing?",
+    "text": "What Really is Deep Learning Doing?. Deep learning has achieved a great success in many areas, from computer\nvision to natural language processing, to game playing, and much more. Yet,\nwhat deep learning is really doing is still an open question. There are a lot\nof works in this direction. For example, [5] tried to explain deep learning by\ngroup renormalization, and [6] tried to explain deep learning from the view of\nfunctional approximation. In order to address this very crucial question, here\nwe see deep learning from perspective of mechanical learning and learning\nmachine (see [1], [2]). From this particular angle, we can see deep learning\nmuch better and answer with confidence: What deep learning is really doing? why\nit works well, how it works, and how much data is necessary for learning. We\nalso will discuss advantages and disadvantages of deep learning at the end of\nthis work.",
+    "pdf_link": "http://arxiv.org/pdf/1711.03577v1.pdf",
+    "authors": [
+      "Chuyu Xiong"
     ]
   },
   {
@@ -300,6 +300,16 @@
     ]
   },
   {
+    "title": "A Selective Overview of Deep Learning",
+    "text": "A Selective Overview of Deep Learning. Deep learning has arguably achieved tremendous success in recent years. In\nsimple words, deep learning uses the composition of many nonlinear functions to\nmodel the complex dependency between input features and labels. While neural\nnetworks have a long history, recent advances have greatly improved their\nperformance in computer vision, natural language processing, etc. From the\nstatistical and scientific perspective, it is natural to ask: What is deep\nlearning? What are the new characteristics of deep learning, compared with\nclassical methods? What are the theoretical foundations of deep learning? To\nanswer these questions, we introduce common neural network models (e.g.,\nconvolutional neural nets, recurrent neural nets, generative adversarial nets)\nand training techniques (e.g., stochastic gradient descent, dropout, batch\nnormalization) from a statistical point of view. Along the way, we highlight\nnew characteristics of deep learning (including depth and over-parametrization)\nand explain their practical and theoretical benefits. We also sample recent\nresults on theories of deep learning, many of which are only suggestive. While\na complete understanding of deep learning remains elusive, we hope that our\nperspectives and discussions serve as a stimulus for new statistical research.",
+    "pdf_link": "http://arxiv.org/pdf/1904.05526v2.pdf",
+    "authors": [
+      "Jianqing Fan",
+      "Cong Ma",
+      "Yiqiao Zhong"
+    ]
+  },
+  {
     "title": "A Survey on Deep Learning Methods for Robot Vision",
     "text": "A Survey on Deep Learning Methods for Robot Vision. Deep learning has allowed a paradigm shift in pattern recognition, from using\nhand-crafted features together with statistical classifiers to using\ngeneral-purpose learning procedures for learning data-driven representations,\nfeatures, and classifiers together. The application of this new paradigm has\nbeen particularly successful in computer vision, in which the development of\ndeep learning methods for vision applications has become a hot research topic.\nGiven that deep learning has already attracted the attention of the robot\nvision community, the main purpose of this survey is to address the use of deep\nlearning in robot vision. To achieve this, a comprehensive overview of deep\nlearning and its usage in computer vision is given, that includes a description\nof the most frequently used neural models and their main application areas.\nThen, the standard methodology and tools used for designing deep-learning based\nvision systems are presented. Afterwards, a review of the principal work using\ndeep learning in robot vision is presented, as well as current and future\ntrends related to the use of deep learning in robotics. This survey is intended\nto be a guide for the developers of robot vision systems.",
     "pdf_link": "http://arxiv.org/pdf/1803.10862v1.pdf",
@@ -315,16 +325,6 @@
     "pdf_link": "http://arxiv.org/pdf/1906.06706v7.pdf",
     "authors": [
       "Changcun Huang"
-    ]
-  },
-  {
-    "title": "A Selective Overview of Deep Learning",
-    "text": "A Selective Overview of Deep Learning. Deep learning has arguably achieved tremendous success in recent years. In\nsimple words, deep learning uses the composition of many nonlinear functions to\nmodel the complex dependency between input features and labels. While neural\nnetworks have a long history, recent advances have greatly improved their\nperformance in computer vision, natural language processing, etc. From the\nstatistical and scientific perspective, it is natural to ask: What is deep\nlearning? What are the new characteristics of deep learning, compared with\nclassical methods? What are the theoretical foundations of deep learning? To\nanswer these questions, we introduce common neural network models (e.g.,\nconvolutional neural nets, recurrent neural nets, generative adversarial nets)\nand training techniques (e.g., stochastic gradient descent, dropout, batch\nnormalization) from a statistical point of view. Along the way, we highlight\nnew characteristics of deep learning (including depth and over-parametrization)\nand explain their practical and theoretical benefits. We also sample recent\nresults on theories of deep learning, many of which are only suggestive. While\na complete understanding of deep learning remains elusive, we hope that our\nperspectives and discussions serve as a stimulus for new statistical research.",
-    "pdf_link": "http://arxiv.org/pdf/1904.05526v2.pdf",
-    "authors": [
-      "Jianqing Fan",
-      "Cong Ma",
-      "Yiqiao Zhong"
     ]
   },
   {
