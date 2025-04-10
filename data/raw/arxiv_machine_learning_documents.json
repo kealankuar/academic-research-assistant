@@ -424,5 +424,102 @@
       "Ninghao Liu",
       "Xia Hu"
     ]
+  },
+  {
+    "title": "Lale: Consistent Automated Machine Learning",
+    "text": "Lale: Consistent Automated Machine Learning. Automated machine learning makes it easier for data scientists to develop\npipelines by searching over possible choices for hyperparameters, algorithms,\nand even pipeline topologies. Unfortunately, the syntax for automated machine\nlearning tools is inconsistent with manual machine learning, with each other,\nand with error checks. Furthermore, few tools support advanced features such as\ntopology search or higher-order operators. This paper introduces Lale, a\nlibrary of high-level Python interfaces that simplifies and unifies automated\nmachine learning in a consistent way.",
+    "pdf_link": "http://arxiv.org/pdf/2007.01977v1.pdf",
+    "authors": [
+      "Guillaume Baudart",
+      "Martin Hirzel",
+      "Kiran Kate",
+      "Parikshit Ram",
+      "Avraham Shinnar"
+    ]
+  },
+  {
+    "title": "Differential Replication in Machine Learning",
+    "text": "Differential Replication in Machine Learning. When deployed in the wild, machine learning models are usually confronted\nwith data and requirements that constantly vary, either because of changes in\nthe generating distribution or because external constraints change the\nenvironment where the model operates. To survive in such an ecosystem, machine\nlearning models need to adapt to new conditions by evolving over time. The idea\nof model adaptability has been studied from different perspectives. In this\npaper, we propose a solution based on reusing the knowledge acquired by the\nalready deployed machine learning models and leveraging it to train future\ngenerations. This is the idea behind differential replication of machine\nlearning models.",
+    "pdf_link": "http://arxiv.org/pdf/2007.07981v1.pdf",
+    "authors": [
+      "Irene Unceta",
+      "Jordi Nin",
+      "Oriol Pujol"
+    ]
+  },
+  {
+    "title": "mlr3proba: An R Package for Machine Learning in Survival Analysis",
+    "text": "mlr3proba: An R Package for Machine Learning in Survival Analysis. As machine learning has become increasingly popular over the last few\ndecades, so too has the number of machine learning interfaces for implementing\nthese models. Whilst many R libraries exist for machine learning, very few\noffer extended support for survival analysis. This is problematic considering\nits importance in fields like medicine, bioinformatics, economics, engineering,\nand more. mlr3proba provides a comprehensive machine learning interface for\nsurvival analysis and connects with mlr3's general model tuning and\nbenchmarking facilities to provide a systematic infrastructure for survival\nmodeling and evaluation.",
+    "pdf_link": "http://arxiv.org/pdf/2008.08080v2.pdf",
+    "authors": [
+      "Raphael Sonabend",
+      "Franz J. Kir\u00e1ly",
+      "Andreas Bender",
+      "Bernd Bischl",
+      "Michel Lang"
+    ]
+  },
+  {
+    "title": "Teaching Uncertainty Quantification in Machine Learning through Use\n  Cases",
+    "text": "Teaching Uncertainty Quantification in Machine Learning through Use\n  Cases. Uncertainty in machine learning is not generally taught as general knowledge\nin Machine Learning course curricula. In this paper we propose a short\ncurriculum for a course about uncertainty in machine learning, and complement\nthe course with a selection of use cases, aimed to trigger discussion and let\nstudents play with the concepts of uncertainty in a programming setting. Our\nuse cases cover the concept of output uncertainty, Bayesian neural networks and\nweight distributions, sources of uncertainty, and out of distribution\ndetection. We expect that this curriculum and set of use cases motivates the\ncommunity to adopt these important concepts into courses for safety in AI.",
+    "pdf_link": "http://arxiv.org/pdf/2108.08712v1.pdf",
+    "authors": [
+      "Matias Valdenegro-Toro"
+    ]
+  },
+  {
+    "title": "Introduction to Machine Learning for Physicians: A Survival Guide for\n  Data Deluge",
+    "text": "Introduction to Machine Learning for Physicians: A Survival Guide for\n  Data Deluge. Many modern research fields increasingly rely on collecting and analysing\nmassive, often unstructured, and unwieldy datasets. Consequently, there is\ngrowing interest in machine learning and artificial intelligence applications\nthat can harness this `data deluge'. This broad nontechnical overview provides\na gentle introduction to machine learning with a specific focus on medical and\nbiological applications. We explain the common types of machine learning\nalgorithms and typical tasks that can be solved, illustrating the basics with\nconcrete examples from healthcare. Lastly, we provide an outlook on open\nchallenges, limitations, and potential impacts of machine-learning-powered\nmedicine.",
+    "pdf_link": "http://arxiv.org/pdf/2212.12303v1.pdf",
+    "authors": [
+      "Ri\u010dards Marcinkevi\u010ds",
+      "Ece Ozkan",
+      "Julia E. Vogt"
+    ]
+  },
+  {
+    "title": "Machine learning-assisted close-set X-ray diffraction phase\n  identification of transition metals",
+    "text": "Machine learning-assisted close-set X-ray diffraction phase\n  identification of transition metals. Machine learning has been applied to the problem of X-ray diffraction phase\nprediction with promising results. In this paper, we describe a method for\nusing machine learning to predict crystal structure phases from X-ray\ndiffraction data of transition metals and their oxides. We evaluate the\nperformance of our method and compare the variety of its settings. Our results\ndemonstrate that the proposed machine learning framework achieves competitive\nperformance. This demonstrates the potential for machine learning to\nsignificantly impact the field of X-ray diffraction and crystal structure\ndetermination. Open-source implementation:\nhttps://github.com/maxnygma/NeuralXRD.",
+    "pdf_link": "http://arxiv.org/pdf/2305.15410v1.pdf",
+    "authors": [
+      "Maksim Zhdanov",
+      "Andrey Zhdanov"
+    ]
+  },
+  {
+    "title": "Insights From Insurance for Fair Machine Learning",
+    "text": "Insights From Insurance for Fair Machine Learning. We argue that insurance can act as an analogon for the social situatedness of\nmachine learning systems, hence allowing machine learning scholars to take\ninsights from the rich and interdisciplinary insurance literature. Tracing the\ninteraction of uncertainty, fairness and responsibility in insurance provides a\nfresh perspective on fairness in machine learning. We link insurance fairness\nconceptions to their machine learning relatives, and use this bridge to\nproblematize fairness as calibration. In this process, we bring to the\nforefront two themes that have been largely overlooked in the machine learning\nliterature: responsibility and aggregate-individual tensions.",
+    "pdf_link": "http://arxiv.org/pdf/2306.14624v2.pdf",
+    "authors": [
+      "Christian Fr\u00f6hlich",
+      "Robert C. Williamson"
+    ]
+  },
+  {
+    "title": "Quantum Dynamics of Machine Learning",
+    "text": "Quantum Dynamics of Machine Learning. The quantum dynamic equation (QDE) of machine learning is obtained based on\nSchr\\\"odinger equation and potential energy equivalence relationship. Through\nWick rotation, the relationship between quantum dynamics and thermodynamics is\nalso established in this paper. This equation reformulates the iterative\nprocess of machine learning into a time-dependent partial differential equation\nwith a clear mathematical structure, offering a theoretical framework for\ninvestigating machine learning iterations through quantum and mathematical\ntheories. Within this framework, the fundamental iterative process, the\ndiffusion model, and the Softmax and Sigmoid functions are examined, validating\nthe proposed quantum dynamics equations. This approach not only presents a\nrigorous theoretical foundation for machine learning but also holds promise for\nsupporting the implementation of machine learning algorithms on quantum\ncomputers.",
+    "pdf_link": "http://arxiv.org/pdf/2407.19890v1.pdf",
+    "authors": [
+      "Peng Wang",
+      "Maimaitiniyazi Maimaitiabudula"
+    ]
+  },
+  {
+    "title": "On the Conditions for Domain Stability for Machine Learning: a\n  Mathematical Approach",
+    "text": "On the Conditions for Domain Stability for Machine Learning: a\n  Mathematical Approach. This work proposes a mathematical approach that (re)defines a property of\nMachine Learning models named stability and determines sufficient conditions to\nvalidate it. Machine Learning models are represented as functions, and the\ncharacteristics in scope depend upon the domain of the function, what allows us\nto adopt topological and metric spaces theory as a basis. Finally, this work\nprovides some equivalences useful to prove and test stability in Machine\nLearning models. The results suggest that whenever stability is aligned with\nthe notion of function smoothness, then the stability of Machine Learning\nmodels primarily depends upon certain topological, measurable properties of the\nclassification sets within the ML model domain.",
+    "pdf_link": "http://arxiv.org/pdf/2412.00464v1.pdf",
+    "authors": [
+      "Gabriel Pedroza"
+    ]
+  },
+  {
+    "title": "Distributed Multitask Learning",
+    "text": "Distributed Multitask Learning. We consider the problem of distributed multi-task learning, where each\nmachine learns a separate, but related, task. Specifically, each machine learns\na linear predictor in high-dimensional space,where all tasks share the same\nsmall support. We present a communication-efficient estimator based on the\ndebiased lasso and show that it is comparable with the optimal centralized\nmethod.",
+    "pdf_link": "http://arxiv.org/pdf/1510.00633v1.pdf",
+    "authors": [
+      "Jialei Wang",
+      "Mladen Kolar",
+      "Nathan Srebro"
+    ]
   }
 ]

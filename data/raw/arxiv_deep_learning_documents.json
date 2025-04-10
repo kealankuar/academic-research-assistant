@@ -396,99 +396,105 @@
     ]
   },
   {
-    "title": "Deep reinforcement learning for optical systems: A case study of\n  mode-locked lasers",
-    "text": "Deep reinforcement learning for optical systems: A case study of\n  mode-locked lasers. We demonstrate that deep reinforcement learning (deep RL) provides a highly\neffective strategy for the control and self-tuning of optical systems. Deep RL\nintegrates the two leading machine learning architectures of deep neural\nnetworks and reinforcement learning to produce robust and stable learning for\ncontrol. Deep RL is ideally suited for optical systems as the tuning and\ncontrol relies on interactions with its environment with a goal-oriented\nobjective to achieve optimal immediate or delayed rewards. This allows the\noptical system to recognize bi-stable structures and navigate, via trajectory\nplanning, to optimally performing solutions, the first such algorithm\ndemonstrated to do so in optical systems. We specifically demonstrate the deep\nRL architecture on a mode-locked laser, where robust self-tuning and control\ncan be established through access of the deep RL agent to its waveplates and\npolarizers. We further integrate transfer learning to help the deep RL agent\nrapidly learn new parameter regimes and generalize its control authority.\nAdditionally, the deep RL learning can be easily integrated with other control\nparadigms to provide a broad framework to control any optical system.",
-    "pdf_link": "http://arxiv.org/pdf/2006.05579v1.pdf",
+    "title": "Deep Learning for Genomics: A Concise Overview",
+    "text": "Deep Learning for Genomics: A Concise Overview. Advancements in genomic research such as high-throughput sequencing\ntechniques have driven modern genomic studies into \"big data\" disciplines. This\ndata explosion is constantly challenging conventional methods used in genomics.\nIn parallel with the urgent demand for robust algorithms, deep learning has\nsucceeded in a variety of fields such as vision, speech, and text processing.\nYet genomics entails unique challenges to deep learning since we are expecting\nfrom deep learning a superhuman intelligence that explores beyond our knowledge\nto interpret the genome. A powerful deep learning model should rely on\ninsightful utilization of task-specific knowledge. In this paper, we briefly\ndiscuss the strengths of different deep learning models from a genomic\nperspective so as to fit each particular task with a proper deep architecture,\nand remark on practical considerations of developing modern deep learning\narchitectures for genomics. We also provide a concise review of deep learning\napplications in various aspects of genomic research, as well as pointing out\npotential opportunities and obstacles for future genomics applications.",
+    "pdf_link": "http://arxiv.org/pdf/1802.00810v4.pdf",
     "authors": [
-      "Chang Sun",
-      "Eurika Kaiser",
-      "Steven L. Brunton",
-      "J. Nathan Kutz"
+      "Tianwei Yue",
+      "Yuanxin Wang",
+      "Longxiang Zhang",
+      "Chunming Gu",
+      "Haoru Xue",
+      "Wenping Wang",
+      "Qi Lyu",
+      "Yujie Dun"
     ]
   },
   {
-    "title": "Error Bounds for a Matrix-Vector Product Approximation with Deep ReLU\n  Neural Networks",
-    "text": "Error Bounds for a Matrix-Vector Product Approximation with Deep ReLU\n  Neural Networks. Among the several paradigms of artificial intelligence (AI) or machine\nlearning (ML), a remarkably successful paradigm is deep learning. Deep\nlearning's phenomenal success has been hoped to be interpreted via fundamental\nresearch on the theory of deep learning. Accordingly, applied research on deep\nlearning has spurred the theory of deep learning-oriented depth and breadth of\ndevelopments. Inspired by such developments, we pose these fundamental\nquestions: can we accurately approximate an arbitrary matrix-vector product\nusing deep rectified linear unit (ReLU) feedforward neural networks (FNNs)? If\nso, can we bound the resulting approximation error? In light of these\nquestions, we derive error bounds in Lebesgue and Sobolev norms that comprise\nour developed deep approximation theory. Guided by this theory, we have\nsuccessfully trained deep ReLU FNNs whose test results justify our developed\ntheory. The developed theory is also applicable for guiding and easing the\ntraining of teacher deep ReLU FNNs in view of the emerging teacher-student AI\nor ML paradigms that are essential for solving several AI or ML problems in\nwireless communications and signal processing; network science and graph signal\nprocessing; and network neuroscience and brain physics.",
-    "pdf_link": "http://arxiv.org/pdf/2111.12963v1.pdf",
+    "title": "Adversarial Attack Based Countermeasures against Deep Learning\n  Side-Channel Attacks",
+    "text": "Adversarial Attack Based Countermeasures against Deep Learning\n  Side-Channel Attacks. Numerous previous works have studied deep learning algorithms applied in the\ncontext of side-channel attacks, which demonstrated the ability to perform\nsuccessful key recoveries. These studies show that modern cryptographic devices\nare increasingly threatened by side-channel attacks with the help of deep\nlearning. However, the existing countermeasures are designed to resist\nclassical side-channel attacks, and cannot protect cryptographic devices from\ndeep learning based side-channel attacks. Thus, there arises a strong need for\ncountermeasures against deep learning based side-channel attacks. Although deep\nlearning has the high potential in solving complex problems, it is vulnerable\nto adversarial attacks in the form of subtle perturbations to inputs that lead\na model to predict incorrectly.\n  In this paper, we propose a kind of novel countermeasures based on\nadversarial attacks that is specifically designed against deep learning based\nside-channel attacks. We estimate several models commonly used in deep learning\nbased side-channel attacks to evaluate the proposed countermeasures. It shows\nthat our approach can effectively protect cryptographic devices from deep\nlearning based side-channel attacks in practice. In addition, our experiments\nshow that the new countermeasures can also resist classical side-channel\nattacks.",
+    "pdf_link": "http://arxiv.org/pdf/2009.10568v1.pdf",
     "authors": [
-      "Tilahun M. Getu"
+      "Ruizhe Gu",
+      "Ping Wang",
+      "Mengce Zheng",
+      "Honggang Hu",
+      "Nenghai Yu"
     ]
   },
   {
-    "title": "Joint Training of Deep Boltzmann Machines",
-    "text": "Joint Training of Deep Boltzmann Machines. We introduce a new method for training deep Boltzmann machines jointly. Prior\nmethods require an initial learning pass that trains the deep Boltzmann machine\ngreedily, one layer at a time, or do not perform well on classifi- cation\ntasks.",
-    "pdf_link": "http://arxiv.org/pdf/1212.2686v1.pdf",
+    "title": "Accelerating Deep Learning with Shrinkage and Recall",
+    "text": "Accelerating Deep Learning with Shrinkage and Recall. Deep Learning is a very powerful machine learning model. Deep Learning trains\na large number of parameters for multiple layers and is very slow when data is\nin large scale and the architecture size is large. Inspired from the shrinking\ntechnique used in accelerating computation of Support Vector Machines (SVM)\nalgorithm and screening technique used in LASSO, we propose a shrinking Deep\nLearning with recall (sDLr) approach to speed up deep learning computation. We\nexperiment shrinking Deep Learning with recall (sDLr) using Deep Neural Network\n(DNN), Deep Belief Network (DBN) and Convolution Neural Network (CNN) on 4 data\nsets. Results show that the speedup using shrinking Deep Learning with recall\n(sDLr) can reach more than 2.0 while still giving competitive classification\nperformance.",
+    "pdf_link": "http://arxiv.org/pdf/1605.01369v2.pdf",
     "authors": [
-      "Ian Goodfellow",
-      "Aaron Courville",
-      "Yoshua Bengio"
+      "Shuai Zheng",
+      "Abhinav Vishnu",
+      "Chris Ding"
     ]
   },
   {
-    "title": "Introduction to deep learning",
-    "text": "Introduction to deep learning. Deep Learning (DL) has made a major impact on data science in the last\ndecade. This chapter introduces the basic concepts of this field. It includes\nboth the basic structures used to design deep neural networks and a brief\nsurvey of some of its popular use cases.",
-    "pdf_link": "http://arxiv.org/pdf/2003.03253v1.pdf",
+    "title": "Adversarial Robustness of Deep Learning: Theory, Algorithms, and\n  Applications",
+    "text": "Adversarial Robustness of Deep Learning: Theory, Algorithms, and\n  Applications. This tutorial aims to introduce the fundamentals of adversarial robustness of\ndeep learning, presenting a well-structured review of up-to-date techniques to\nassess the vulnerability of various types of deep learning models to\nadversarial examples. This tutorial will particularly highlight\nstate-of-the-art techniques in adversarial attacks and robustness verification\nof deep neural networks (DNNs). We will also introduce some effective\ncountermeasures to improve the robustness of deep learning models, with a\nparticular focus on adversarial training. We aim to provide a comprehensive\noverall picture about this emerging direction and enable the community to be\naware of the urgency and importance of designing robust deep learning models in\nsafety-critical data analytical applications, ultimately enabling the end-users\nto trust deep learning classifiers. We will also summarize potential research\ndirections concerning the adversarial robustness of deep learning, and its\npotential benefits to enable accountable and trustworthy deep learning-based\ndata analytical systems and applications.",
+    "pdf_link": "http://arxiv.org/pdf/2108.10451v1.pdf",
     "authors": [
-      "Lihi Shiloh-Perl",
-      "Raja Giryes"
+      "Wenjie Ruan",
+      "Xinping Yi",
+      "Xiaowei Huang"
     ]
   },
   {
-    "title": "Deep Learning: From Basics to Building Deep Neural Networks with Python",
-    "text": "Deep Learning: From Basics to Building Deep Neural Networks with Python. This book is intended for beginners who have no familiarity with deep\nlearning. Our only expectation from readers is that they already have the basic\nprogramming skills in Python.",
-    "pdf_link": "http://arxiv.org/pdf/2205.01069v1.pdf",
+    "title": "Efficient Deep Feature Learning and Extraction via StochasticNets",
+    "text": "Efficient Deep Feature Learning and Extraction via StochasticNets. Deep neural networks are a powerful tool for feature learning and extraction\ngiven their ability to model high-level abstractions in highly complex data.\nOne area worth exploring in feature learning and extraction using deep neural\nnetworks is efficient neural connectivity formation for faster feature learning\nand extraction. Motivated by findings of stochastic synaptic connectivity\nformation in the brain as well as the brain's uncanny ability to efficiently\nrepresent information, we propose the efficient learning and extraction of\nfeatures via StochasticNets, where sparsely-connected deep neural networks can\nbe formed via stochastic connectivity between neurons. To evaluate the\nfeasibility of such a deep neural network architecture for feature learning and\nextraction, we train deep convolutional StochasticNets to learn abstract\nfeatures using the CIFAR-10 dataset, and extract the learned features from\nimages to perform classification on the SVHN and STL-10 datasets. Experimental\nresults show that features learned using deep convolutional StochasticNets,\nwith fewer neural connections than conventional deep convolutional neural\nnetworks, can allow for better or comparable classification accuracy than\nconventional deep neural networks: relative test error decrease of ~4.5% for\nclassification on the STL-10 dataset and ~1% for classification on the SVHN\ndataset. Furthermore, it was shown that the deep features extracted using deep\nconvolutional StochasticNets can provide comparable classification accuracy\neven when only 10% of the training data is used for feature learning. Finally,\nit was also shown that significant gains in feature extraction speed can be\nachieved in embedded applications using StochasticNets. As such, StochasticNets\nallow for faster feature learning and extraction performance while facilitate\nfor better or comparable accuracy performances.",
+    "pdf_link": "http://arxiv.org/pdf/1512.03844v1.pdf",
     "authors": [
-      "Milad Vazan"
+      "Mohammad Javad Shafiee",
+      "Parthipan Siva",
+      "Paul Fieguth",
+      "Alexander Wong"
     ]
   },
   {
-    "title": "A Nesterov's Accelerated quasi-Newton method for Global Routing using\n  Deep Reinforcement Learning",
-    "text": "A Nesterov's Accelerated quasi-Newton method for Global Routing using\n  Deep Reinforcement Learning. Deep Q-learning method is one of the most popularly used deep reinforcement\nlearning algorithms which uses deep neural networks to approximate the\nestimation of the action-value function. Training of the deep Q-network (DQN)\nis usually restricted to first order gradient based methods. This paper\nattempts to accelerate the training of deep Q-networks by introducing a second\norder Nesterov's accelerated quasi-Newton method. We evaluate the performance\nof the proposed method on deep reinforcement learning using double DQNs for\nglobal routing. The results show that the proposed method can obtain better\nrouting solutions compared to the DQNs trained with first order Adam and\nRMSprop methods.",
-    "pdf_link": "http://arxiv.org/pdf/2010.09465v1.pdf",
+    "title": "Modern Deep Reinforcement Learning Algorithms",
+    "text": "Modern Deep Reinforcement Learning Algorithms. Recent advances in Reinforcement Learning, grounded on combining classical\ntheoretical results with Deep Learning paradigm, led to breakthroughs in many\nartificial intelligence tasks and gave birth to Deep Reinforcement Learning\n(DRL) as a field of research. In this work latest DRL algorithms are reviewed\nwith a focus on their theoretical justification, practical limitations and\nobserved empirical properties.",
+    "pdf_link": "http://arxiv.org/pdf/1906.10025v2.pdf",
     "authors": [
-      "S. Indrapriyadarsini",
-      "Shahrzad Mahboubi",
-      "Hiroshi Ninomiya",
-      "Takeshi Kamio",
-      "Hideki Asai"
+      "Sergey Ivanov",
+      "Alexander D'yakonov"
     ]
   },
   {
-    "title": "Augmented Q Imitation Learning (AQIL)",
-    "text": "Augmented Q Imitation Learning (AQIL). The study of unsupervised learning can be generally divided into two\ncategories: imitation learning and reinforcement learning. In imitation\nlearning the machine learns by mimicking the behavior of an expert system\nwhereas in reinforcement learning the machine learns via direct environment\nfeedback. Traditional deep reinforcement learning takes a significant time\nbefore the machine starts to converge to an optimal policy. This paper proposes\nAugmented Q-Imitation-Learning, a method by which deep reinforcement learning\nconvergence can be accelerated by applying Q-imitation-learning as the initial\ntraining process in traditional Deep Q-learning.",
-    "pdf_link": "http://arxiv.org/pdf/2004.00993v2.pdf",
+    "title": "An Essay on Optimization Mystery of Deep Learning",
+    "text": "An Essay on Optimization Mystery of Deep Learning. Despite the huge empirical success of deep learning, theoretical\nunderstanding of neural networks learning process is still lacking. This is the\nreason, why some of its features seem \"mysterious\". We emphasize two mysteries\nof deep learning: generalization mystery, and optimization mystery. In this\nessay we review and draw connections between several selected works concerning\nthe latter.",
+    "pdf_link": "http://arxiv.org/pdf/1905.07187v1.pdf",
     "authors": [
-      "Xiao Lei Zhang",
-      "Anish Agarwal"
+      "Eugene Golikov"
     ]
   },
   {
-    "title": "Deep Reinforcement Learning for Conversational AI",
-    "text": "Deep Reinforcement Learning for Conversational AI. Deep reinforcement learning is revolutionizing the artificial intelligence\nfield. Currently, it serves as a good starting point for constructing\nintelligent autonomous systems which offer a better knowledge of the visual\nworld. It is possible to scale deep reinforcement learning with the use of deep\nlearning and do amazing tasks such as use of pixels in playing video games. In\nthis paper, key concepts of deep reinforcement learning including reward\nfunction, differences between reinforcement learning and supervised learning\nand models for implementation of reinforcement are discussed. Key challenges\nrelated to the implementation of reinforcement learning in conversational AI\ndomain are identified as well as discussed in detail. Various conversational\nmodels which are based on deep reinforcement learning (as well as deep\nlearning) are also discussed. In summary, this paper discusses key aspects of\ndeep reinforcement learning which are crucial for designing an efficient\nconversational AI.",
-    "pdf_link": "http://arxiv.org/pdf/1709.05067v1.pdf",
+    "title": "Deep Super Learner: A Deep Ensemble for Classification Problems",
+    "text": "Deep Super Learner: A Deep Ensemble for Classification Problems. Deep learning has become very popular for tasks such as predictive modeling\nand pattern recognition in handling big data. Deep learning is a powerful\nmachine learning method that extracts lower level features and feeds them\nforward for the next layer to identify higher level features that improve\nperformance. However, deep neural networks have drawbacks, which include many\nhyper-parameters and infinite architectures, opaqueness into results, and\nrelatively slower convergence on smaller datasets. While traditional machine\nlearning algorithms can address these drawbacks, they are not typically capable\nof the performance levels achieved by deep neural networks. To improve\nperformance, ensemble methods are used to combine multiple base learners. Super\nlearning is an ensemble that finds the optimal combination of diverse learning\nalgorithms. This paper proposes deep super learning as an approach which\nachieves log loss and accuracy results competitive to deep neural networks\nwhile employing traditional machine learning algorithms in a hierarchical\nstructure. The deep super learner is flexible, adaptable, and easy to train\nwith good performance across different tasks using identical hyper-parameter\nvalues. Using traditional machine learning requires fewer hyper-parameters,\nallows transparency into results, and has relatively fast convergence on\nsmaller datasets. Experimental results show that the deep super learner has\nsuperior performance compared to the individual base learners, single-layer\nensembles, and in some cases deep neural networks. Performance of the deep\nsuper learner may further be improved with task-specific tuning.",
+    "pdf_link": "http://arxiv.org/pdf/1803.02323v1.pdf",
     "authors": [
-      "Mahipal Jadeja",
-      "Neelanshi Varia",
-      "Agam Shah"
+      "Steven Young",
+      "Tamer Abdou",
+      "Ayse Bener"
     ]
   },
   {
-    "title": "An Overview of Deep Semi-Supervised Learning",
-    "text": "An Overview of Deep Semi-Supervised Learning. Deep neural networks demonstrated their ability to provide remarkable\nperformances on a wide range of supervised learning tasks (e.g., image\nclassification) when trained on extensive collections of labeled data (e.g.,\nImageNet). However, creating such large datasets requires a considerable amount\nof resources, time, and effort. Such resources may not be available in many\npractical cases, limiting the adoption and the application of many deep\nlearning methods. In a search for more data-efficient deep learning methods to\novercome the need for large annotated datasets, there is a rising research\ninterest in semi-supervised learning and its applications to deep neural\nnetworks to reduce the amount of labeled data required, by either developing\nnovel methods or adopting existing semi-supervised learning frameworks for a\ndeep learning setting. In this paper, we provide a comprehensive overview of\ndeep semi-supervised learning, starting with an introduction to the field,\nfollowed by a summarization of the dominant semi-supervised approaches in deep\nlearning.",
-    "pdf_link": "http://arxiv.org/pdf/2006.05278v2.pdf",
+    "title": "Deep Embedding Kernel",
+    "text": "Deep Embedding Kernel. In this paper, we propose a novel supervised learning method that is called\nDeep Embedding Kernel (DEK). DEK combines the advantages of deep learning and\nkernel methods in a unified framework. More specifically, DEK is a learnable\nkernel represented by a newly designed deep architecture. Compared with\npre-defined kernels, this kernel can be explicitly trained to map data to an\noptimized high-level feature space where data may have favorable features\ntoward the application. Compared with typical deep learning using SoftMax or\nlogistic regression as the top layer, DEK is expected to be more generalizable\nto new data. Experimental results show that DEK has superior performance than\ntypical machine learning methods in identity detection, classification,\nregression, dimension reduction, and transfer learning.",
+    "pdf_link": "http://arxiv.org/pdf/1804.05806v1.pdf",
     "authors": [
-      "Yassine Ouali",
-      "C\u00e9line Hudelot",
-      "Myriam Tami"
+      "Linh Le",
+      "Ying Xie"
     ]
   },
   {
-    "title": "Node-By-Node Greedy Deep Learning for Interpretable Features",
-    "text": "Node-By-Node Greedy Deep Learning for Interpretable Features. Multilayer networks have seen a resurgence under the umbrella of deep\nlearning. Current deep learning algorithms train the layers of the network\nsequentially, improving algorithmic performance as well as providing some\nregularization. We present a new training algorithm for deep networks which\ntrains \\emph{each node in the network} sequentially. Our algorithm is orders of\nmagnitude faster, creates more interpretable internal representations at the\nnode level, while not sacrificing on the ultimate out-of-sample performance.",
-    "pdf_link": "http://arxiv.org/pdf/1602.06183v1.pdf",
+    "title": "Priors in Bayesian Deep Learning: A Review",
+    "text": "Priors in Bayesian Deep Learning: A Review. While the choice of prior is one of the most critical parts of the Bayesian\ninference workflow, recent Bayesian deep learning models have often fallen back\non vague priors, such as standard Gaussians. In this review, we highlight the\nimportance of prior choices for Bayesian deep learning and present an overview\nof different priors that have been proposed for (deep) Gaussian processes,\nvariational autoencoders, and Bayesian neural networks. We also outline\ndifferent methods of learning priors for these models from data. We hope to\nmotivate practitioners in Bayesian deep learning to think more carefully about\nthe prior specification for their models and to provide them with some\ninspiration in this regard.",
+    "pdf_link": "http://arxiv.org/pdf/2105.06868v3.pdf",
     "authors": [
-      "Ke Wu",
-      "Malik Magdon-Ismail"
+      "Vincent Fortuin"
     ]
   }
 ]
