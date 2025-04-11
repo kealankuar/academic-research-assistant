@@ -43,13 +43,14 @@ def process_entries(entries):
         })
     return documents
 
-def query_arxiv_paginated(search_query, total_results=50, batch_size=5):
+def query_arxiv_paginated(search_query, total_results=50, batch_size=5, start=0):
     """
-    Retrieve entries from the arXiv API using pagination until we reach total_results.
+    Retrieve entries from the arXiv API using pagination,
+    starting from a given offset.
     """
     all_entries = []
-    for start in range(0, total_results, batch_size):
-        entries = query_arxiv(search_query, start=start, max_results=batch_size)
+    for offset in range(start, start + total_results, batch_size):
+        entries = query_arxiv(search_query, start=offset, max_results=batch_size)
         all_entries.extend(entries)
     return all_entries
 
