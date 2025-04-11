@@ -1,90 +1,167 @@
 # src/app.py
 
-import streamlit as st
 import os
-from data_acquisition import download_and_save_topic
-from retrieval import load_documents, create_embeddings, build_faiss_index, retrieve_documents
+import time
+import streamlit as st
+import pandas as pd
+
+# For retrieval embeddings and FAISS index
+from sentence_transformers import SentenceTransformer
+import faiss
+
+# Import your own modules
+from data_acquisition import download_and_save_topic_to_db
+from db import get_session
+from models import Topic, Document
+from cache_utils import cached_fetch_topic, normalize_topic
 from generation import load_generator, generate_response
+
+# ----------------- Helper Functions -----------------
+
+def get_all_topics():
+    """Fetch all topics from the PostgreSQL database."""
+    session = get_session()
+    try:
+        topics = session.query(Topic).all()
+    except Exception as e:
+        st.error(f"Error retrieving topics: {e}")
+        topics = []
+    finally:
+        session.close()
+    return topics
+
+def display_topics_summary():
+    """Display a summary table of topics and their document counts."""
+    topics = get_all_topics()
+    if topics:
+        topics_data = [{"Topic": t.name, "Document Count": t.document_count} for t in topics]
+        df = pd.DataFrame(topics_data)
+        st.subheader("Topics Summary")
+        st.dataframe(df)
+    else:
+        st.info("No topics found in the database yet.")
+
+# ----------------- Data Acquisition Tab -----------------
 
 def acquisition_tab():
     st.header("Data Acquisition")
-    st.write("Fetch research papers from arXiv for one or more topics. Enter the topics separated by commas (e.g., deep learning, machine learning, neural networks).")
+    st.write("Enter one or more research topics (comma separated) to fetch and store documents from arXiv into the database.")
     
-    # Input: Allow multiple topics as a comma-separated string
-    topic_input = st.text_input("Enter the research topics:")
-    num_docs = st.number_input("Number of documents to fetch per topic:", min_value=5, max_value=200, value=50, step=5)
+    topics_input = st.text_input("Enter topics", "deep learning, machine learning, neural networks")
+    num_docs = st.number_input("Number of documents per topic", min_value=1, max_value=200, value=50, step=5)
+    force_refresh = st.checkbox("Force refresh data for these topics", value=False)
     
     if st.button("Fetch Documents"):
-        if topic_input.strip() == "":
-            st.error("Please enter at least one topic.")
+        topics = [topic.strip() for topic in topics_input.split(",") if topic.strip()]
+        if not topics:
+            st.error("Please enter at least one valid topic.")
         else:
-            topics = [t.strip() for t in topic_input.split(",") if t.strip()]
-            if not topics:
-                st.error("Please enter valid topics separated by commas.")
-            else:
-                all_docs = []
-                for topic in topics:
-                    with st.spinner(f"Fetching documents for topic: {topic}..."):
-                        docs = download_and_save_topic(topic, total_results=int(num_docs), batch_size=5)
-                        all_docs.extend(docs)
-                st.success(f"Fetched a total of {len(all_docs)} documents across {len(topics)} topics.")
-                # Optionally, display a preview of the first document from the first topic:
-                if all_docs:
-                    st.write("Example Document:", all_docs[0])
-                    
-                # Optionally, save combined topics into one file (if required)
-                combined_filename = os.path.join("data", "raw", "arxiv_combined_documents.json")
-                with open(combined_filename, 'w', encoding='utf-8') as f:
-                    import json
-                    json.dump(all_docs, f, indent=2)
-                st.info(f"Combined dataset saved to {combined_filename}")
+            errors = []
+            for topic in topics:
+                try:
+                    with st.spinner(f"Fetching documents for '{topic}' ..."):
+                        # Use caching with incremental fetching. If force_refresh is checked, bypass cache.
+                        fetch_interval = 0 if force_refresh else 3600
+                        data, from_cache = cached_fetch_topic(topic, total_requested=int(num_docs), fetch_interval=fetch_interval)
+                        if from_cache:
+                            st.info(f"Using cached data for topic '{topic}'.")
+                        else:
+                            st.success(f"Fetched fresh data for topic '{topic}'.")
+                except Exception as e:
+                    errors.append(f"Error fetching topic '{topic}': {e}")
+            if errors:
+                for err in errors:
+                    st.error(err)
+            display_topics_summary()
+    else:
+        display_topics_summary()
 
-
+# ----------------- Main App Tab (Retrieval and Generation) -----------------
 
 def main_app_tab():
-    st.header("Main App: Query Research Papers")
+    st.header("Research Query and Answer Generation")
+    st.write("Enter your query and select a topic. The app will retrieve the most relevant documents using similarity search and generate an answer using your generative model.")
     
-    # Determine the path to the combined dataset
-    project_root = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
-    data_file = os.path.join(project_root, "data", "raw", "arxiv_combined_documents.json")
+    query = st.text_input("Enter your research query:")
+    topic_for_context = st.text_input("Enter the topic to retrieve context from", "deep learning")
     
-    if os.path.exists(data_file):
-        documents = load_documents(data_file)
-        st.write(f"Loaded {len(documents)} documents.")
+    # Model selection and generation parameters
+    model_option = st.selectbox("Select generative model", options=["t5-small", "t5-base", "t5-large"], index=0)
+    max_length = st.slider("Max generated length", min_value=50, max_value=500, value=150, step=10)
+    num_beams = st.slider("Number of beams", min_value=1, max_value=10, value=4, step=1)
+    top_k = st.slider("Number of documents to retrieve", min_value=1, max_value=10, value=3, step=1)
+    
+    if query and topic_for_context:
+        # Load documents from the database for the given topic
+        session = get_session()
+        topic_id = session.query(Topic.id).filter(Topic.name.ilike(f"%{topic_for_context.strip().lower()}%")).scalar()
+        if topic_id is None:
+            st.warning("No documents found for the given topic. Please fetch documents for this topic using the Data Acquisition tab.")
+            session.close()
+            return
+
+        docs = session.query(Document).filter(Document.topic_id == topic_id).all()
+        session.close()
         
-        # Build the retrieval pipeline
-        with st.spinner("Preparing retrieval index..."):
-            embeddings, embedder = create_embeddings(documents)
-            index = build_faiss_index(embeddings)
+        if not docs:
+            st.warning("No documents found for the given topic. Please fetch documents for this topic using the Data Acquisition tab.")
+            return
+
+        # Prepare document texts for retrieval.
+        doc_texts = [doc.text for doc in docs]
+        st.write(f"Loaded {len(doc_texts)} documents for topic '{topic_for_context}'.")
         
-        gen_model, tokenizer = load_generator("t5-small")
+        # Build embeddings with a SentenceTransformer model.
+        embed_model = SentenceTransformer('all-MiniLM-L6-v2')
+        embeddings = embed_model.encode(doc_texts, convert_to_numpy=True)
+        dim = embeddings.shape[1]
         
-        # User query input
-        query = st.text_input("Enter your research query:")
-        if query:
-            with st.spinner("Retrieving and generating response..."):
-                retrieved_docs = retrieve_documents(query, embedder, index, documents, top_k=3)
-                # Combine the retrieved abstracts as context
-                context = " ".join([doc['text'] for doc in retrieved_docs])
-                answer = generate_response(query, context, gen_model, tokenizer)
-            
-            st.subheader("Generated Answer")
-            st.write(answer)
-            
-            st.subheader("Relevant Research Papers")
-            for i, doc in enumerate(retrieved_docs):
-                st.write(f"**{doc['title']}**")
-                st.write(doc['text'][:300] + "...")
-                st.markdown(f"[View PDF]({doc['pdf_link']})")
+        # Build a FAISS index from the embeddings.
+        index = faiss.IndexFlatL2(dim)
+        index.add(embeddings)
+        
+        # Embed the user's query.
+        query_embedding = embed_model.encode([query], convert_to_numpy=True)
+        distances, indices = index.search(query_embedding, top_k)
+        
+        # Retrieve the most similar documents.
+        retrieved_docs = [docs[i] for i in indices[0] if i < len(docs)]
+        
+        st.subheader("Retrieved Documents")
+        for doc in retrieved_docs:
+            # Display a hyperlink with the document title that points to the PDF link.
+            st.markdown(f"[{doc.title}]({doc.pdf_link})", unsafe_allow_html=True)
+        
+        # Combine the retrieved document texts to form context.
+        context = " ".join([doc.text for doc in retrieved_docs])
+        st.subheader("Context Used for Generation")
+        st.write(context[:500] + " ...")  # Display first 500 characters
+        
+        # Load the generative model.
+        with st.spinner("Loading generative model..."):
+            gen_model, tokenizer = load_generator(model_name=model_option)
+        
+        # Generate an answer based on the query and context.
+        with st.spinner("Generating answer..."):
+            answer = generate_response(query, context, gen_model, tokenizer, max_length=max_length, num_beams=num_beams)
+        
+        st.subheader("Generated Answer")
+        st.write(answer)
     else:
-        st.error("No dataset found. Please use the Data Acquisition tab to fetch documents first.")
+        st.info("Please enter a research query and a topic for context.")
 
-# Main dashboard title and tabs
-st.title("Academic Research Assistant Dashboard")
-tab1, tab2 = st.tabs(["Data Acquisition", "Main App"])
 
-with tab1:
-    acquisition_tab()
+# ----------------- Main Function -----------------
 
-with tab2:
-    main_app_tab()
+def main():
+    st.title("Academic Research Assistant Dashboard")
+    tab1, tab2 = st.tabs(["Data Acquisition", "Main App"])
+    
+    with tab1:
+        acquisition_tab()
+    
+    with tab2:
+        main_app_tab()
+
+if __name__ == "__main__":
+    main()
